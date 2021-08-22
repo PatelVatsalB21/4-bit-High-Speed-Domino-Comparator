@@ -1,6 +1,0 @@
-<< properties >>
-string FIXED_BBOX 0 0 4734 6878
-string GDS_FILE /openLANE_flow/cmp/runs/run_three/results/magic/cmp.gds
-string GDS_END 95286
-string GDS_START 43704
-<< end >>
