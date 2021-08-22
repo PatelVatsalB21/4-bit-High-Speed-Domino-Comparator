@@ -1,0 +1,1 @@
+lvs {/openLANE_flow/cmp/runs/run_three/results/magic/cmp.spice cmp} {/openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs.powered.v cmp} /openLANE_flow/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs.lef.log -json

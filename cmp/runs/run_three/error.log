@@ -1,0 +1,17 @@
+during executing: "openroad -exit /openLANE_flow/scripts/openroad/or_opendp.tcl |& tee >&@stdout /openLANE_flow/cmp/runs/run_three/logs/placement/10-opendp.log"
+Last 10 lines:
+child process exited abnormally
+
+during executing: "openroad -python /openLANE_flow/report_generation_wrapper.py -d /openLANE_flow/cmp -dn cmp -t run_three -o /openLANE_flow/cmp/runs/run_three/reports/final_summary_report.csv -m /openLANE_flow/cmp/runs/run_three/reports/manufacturability_report.rpt -rs /openLANE_flow/cmp/runs/run_three/reports/runtime_summary_report.rpt -r /openLANE_flow/cmp/runs/run_three"
+Last 10 lines:
+OpenROAD 1 4d4d7205fd0292dbf3fae55fad9109b3f0bd5786
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+grep: /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+

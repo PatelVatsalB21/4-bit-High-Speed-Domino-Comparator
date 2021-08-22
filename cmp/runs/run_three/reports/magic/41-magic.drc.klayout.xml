@@ -1,0 +1,631 @@
+<?xml version="1.0" ?>
+<report-database>
+    <categories>
+        <category>
+            <name>Metal5_spacing_lt_1dot6um_met5dot2</name>
+        </category>
+    </categories>
+    <cells>
+        <cell>
+            <name>cmp</name>
+        </cell>
+    </cells>
+    <items>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,22.110;23.000,22.320)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,21.840;10.755,22.110)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (10.755,21.840;11.935,22.110)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (11.935,21.840;16.580,22.110)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (16.580,21.840;17.760,22.110)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (17.760,21.840;23.000,22.110)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,23.650;7.840,23.920)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (7.840,23.650;9.020,23.920)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (9.020,23.650;13.670,23.920)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (13.670,23.650;14.850,23.920)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (14.850,23.650;19.495,23.920)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (19.495,23.650;20.675,23.920)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (20.675,23.650;23.000,23.920)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,23.440;23.000,23.650)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,19.390;23.000,19.600)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,19.120;7.840,19.390)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (7.840,19.120;9.020,19.390)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (9.020,19.120;13.670,19.390)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (13.670,19.120;14.850,19.390)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (14.850,19.120;19.495,19.390)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (19.495,19.120;20.675,19.390)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (20.675,19.120;23.000,19.390)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,20.930;10.755,21.200)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (10.755,20.930;11.935,21.200)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (11.935,20.930;16.580,21.200)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (16.580,20.930;17.760,21.200)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (17.760,20.930;23.000,21.200)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,20.720;23.000,20.930)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,16.670;23.000,16.880)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,16.400;10.755,16.670)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (10.755,16.400;11.935,16.670)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (11.935,16.400;16.580,16.670)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (16.580,16.400;17.760,16.670)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (17.760,16.400;23.000,16.670)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,18.210;7.840,18.480)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (7.840,18.210;9.020,18.480)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (9.020,18.210;13.670,18.480)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (13.670,18.210;14.850,18.480)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (14.850,18.210;19.495,18.480)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (19.495,18.210;20.675,18.480)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (20.675,18.210;23.000,18.480)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,18.000;23.000,18.210)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,13.950;23.000,14.160)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,13.680;7.840,13.950)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (7.840,13.680;9.020,13.950)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (9.020,13.680;13.670,13.950)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (13.670,13.680;14.850,13.950)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (14.850,13.680;19.495,13.950)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (19.495,13.680;20.675,13.950)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (20.675,13.680;23.000,13.950)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,15.490;10.755,15.760)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (10.755,15.490;11.935,15.760)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (11.935,15.490;16.580,15.760)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (16.580,15.490;17.760,15.760)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (17.760,15.490;23.000,15.760)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal5_spacing_lt_1dot6um_met5dot2</category>
+            <cell>cmp</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (5.520,15.280;23.000,15.490)</value>
+                <value>text: 'On layer met5'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+    </items>
+</report-database>

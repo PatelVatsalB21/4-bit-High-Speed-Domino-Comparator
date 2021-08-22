@@ -1,0 +1,2006 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+4052 (git sha1 d061b0e, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Verilog-2005 frontend: /openLANE_flow/cmp/src/cmp.v
+Parsing SystemVerilog input from `/openLANE_flow/cmp/src/cmp.v' to AST representation.
+Generating RTLIL representation for module `\cmp'.
+Note: Assuming pure combinatorial block at /openLANE_flow/cmp/src/cmp.v:15.2-24.13 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+2. Generating Graphviz representation of design.
+Writing dot description to `/openLANE_flow/cmp/runs/run_three/tmp/synthesis/hierarchy.dot'.
+Dumping module cmp to page 1.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \cmp
+
+3.2. Analyzing design hierarchy..
+Top module:  \cmp
+Removed 0 unused modules.
+
+4. Executing TRIBUF pass.
+
+5. Executing SYNTH pass.
+
+5.1. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1.1. Analyzing design hierarchy..
+Top module:  \cmp
+
+5.1.2. Analyzing design hierarchy..
+Top module:  \cmp
+Removed 0 unused modules.
+
+5.2. Executing PROC pass (convert processes to netlists).
+
+5.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/openLANE_flow/cmp/src/cmp.v:15$1 in module cmp.
+Removed a total of 0 dead cases.
+
+5.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 1 assignment to connection.
+
+5.2.4. Executing PROC_INIT pass (extract init attributes).
+
+5.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.2.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\cmp.$proc$/openLANE_flow/cmp/src/cmp.v:15$1'.
+     1/2: $2\out[0:0]
+     2/2: $1\out[0:0]
+
+5.2.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\cmp.\out' from process `\cmp.$proc$/openLANE_flow/cmp/src/cmp.v:15$1'.
+
+5.2.8. Executing PROC_DFF pass (convert process syncs to FFs).
+
+5.2.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.2.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\cmp.$proc$/openLANE_flow/cmp/src/cmp.v:15$1'.
+Removing empty process `cmp.$proc$/openLANE_flow/cmp/src/cmp.v:15$1'.
+Cleaned up 2 empty switches.
+
+5.3. Executing FLATTEN pass (flatten design).
+
+5.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~1 debug messages>
+
+5.6. Executing CHECK pass (checking for obvious problems).
+Checking module cmp...
+Found and reported 0 problems.
+
+5.7. Executing OPT pass (performing simple optimizations).
+
+5.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cmp..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$7.
+Removed 1 multiplexer ports.
+<suppressed ~1 debug messages>
+
+5.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cmp.
+Performed a total of 0 changes.
+
+5.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+5.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.7.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cmp..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+5.7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cmp.
+Performed a total of 0 changes.
+
+5.7.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.7.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+5.7.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.7.16. Finished OPT passes. (There is nothing left to do.)
+
+5.8. Executing FSM pass (extract and optimize FSM).
+
+5.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+5.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+5.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+5.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+5.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+5.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+5.9. Executing OPT pass (performing simple optimizations).
+
+5.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cmp..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+5.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cmp.
+Performed a total of 0 changes.
+
+5.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+5.9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.9.9. Finished OPT passes. (There is nothing left to do.)
+
+5.10. Executing WREDUCE pass (reducing word size of cells).
+
+5.11. Executing PEEPOPT pass (run peephole optimizers).
+
+5.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+5.13. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module cmp:
+  created 0 $alu and 0 $macc cells.
+
+5.14. Executing SHARE pass (SAT-based resource sharing).
+
+5.15. Executing OPT pass (performing simple optimizations).
+
+5.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cmp..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+5.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cmp.
+Performed a total of 0 changes.
+
+5.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+5.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.15.9. Finished OPT passes. (There is nothing left to do.)
+
+5.16. Executing MEMORY pass.
+
+5.16.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+5.16.2. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+5.16.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+5.16.4. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+5.16.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+5.16.6. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+5.18. Executing OPT pass (performing simple optimizations).
+
+5.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+<suppressed ~2 debug messages>
+
+5.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+5.18.5. Finished fast OPT passes.
+
+5.19. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+5.20. Executing OPT pass (performing simple optimizations).
+
+5.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cmp..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+5.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cmp.
+Performed a total of 0 changes.
+
+5.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.20.6. Executing OPT_SHARE pass.
+
+5.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+5.20.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.20.10. Finished OPT passes. (There is nothing left to do.)
+
+5.21. Executing TECHMAP pass (map to technology primitives).
+
+5.21.1. Executing Verilog-2005 frontend: /build/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/build/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+5.21.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~70 debug messages>
+
+5.22. Executing OPT pass (performing simple optimizations).
+
+5.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+<suppressed ~1 debug messages>
+
+5.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 1 unused cells and 3 unused wires.
+<suppressed ~2 debug messages>
+
+5.22.5. Finished fast OPT passes.
+
+5.23. Executing ABC pass (technology mapping using ABC).
+
+5.23.1. Extracting gate netlist of module `\cmp' to `<abc-temp-dir>/input.blif'..
+Extracted 8 gates and 17 wires to a netlist network with 9 inputs and 1 outputs.
+
+5.23.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+5.23.1.2. Re-integrating ABC results.
+ABC RESULTS:            ANDNOT cells:        3
+ABC RESULTS:                OR cells:        1
+ABC RESULTS:              XNOR cells:        1
+ABC RESULTS:               XOR cells:        3
+ABC RESULTS:        internal signals:        7
+ABC RESULTS:           input signals:        9
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+5.24. Executing OPT pass (performing simple optimizations).
+
+5.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+5.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+5.24.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 0 unused cells and 13 unused wires.
+<suppressed ~1 debug messages>
+
+5.24.5. Finished fast OPT passes.
+
+5.25. Executing HIERARCHY pass (managing design hierarchy).
+
+5.25.1. Analyzing design hierarchy..
+Top module:  \cmp
+
+5.25.2. Analyzing design hierarchy..
+Top module:  \cmp
+Removed 0 unused modules.
+
+5.26. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 11
+   Number of wire bits:             17
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $_ANDNOT_                       3
+     $_OR_                           1
+     $_XNOR_                         1
+     $_XOR_                          3
+
+5.27. Executing CHECK pass (checking for obvious problems).
+Checking module cmp...
+Found and reported 0 problems.
+
+6. Generating Graphviz representation of design.
+Writing dot description to `/openLANE_flow/cmp/runs/run_three/tmp/synthesis/post_techmap.dot'.
+Dumping module cmp to page 1.
+
+7. Executing SHARE pass (SAT-based resource sharing).
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cmp..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cmp.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cmp'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cmp.
+
+8.9. Finished OPT passes. (There is nothing left to do.)
+
+9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+
+10. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 11
+   Number of wire bits:             17
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $_ANDNOT_                       3
+     $_OR_                           1
+     $_XNOR_                         1
+     $_XOR_                          3
+
+mapping tbuf
+
+11. Executing TECHMAP pass (map to technology primitives).
+
+11.1. Executing Verilog-2005 frontend: /openLANE_flow/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/openLANE_flow/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+11.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+12. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+13. Executing MUXCOVER pass (mapping to wider MUXes).
+Covering MUX trees in module cmp..
+  Treeifying 0 MUXes:
+    Finished treeification: Found 0 trees.
+  Covering trees:
+  Added a total of 0 decoder MUXes.
+<suppressed ~1 debug messages>
+
+14. Executing TECHMAP pass (map to technology primitives).
+
+14.1. Executing Verilog-2005 frontend: /openLANE_flow/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux4_map.v
+Parsing Verilog input from `/openLANE_flow/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux4_map.v' to AST representation.
+Generating RTLIL representation for module `\$_MUX4_'.
+Successfully finished Verilog frontend.
+
+14.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+15. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+16. Executing TECHMAP pass (map to technology primitives).
+
+16.1. Executing Verilog-2005 frontend: /openLANE_flow/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux2_map.v
+Parsing Verilog input from `/openLANE_flow/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux2_map.v' to AST representation.
+Generating RTLIL representation for module `\$_MUX_'.
+Successfully finished Verilog frontend.
+
+16.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+17. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+18. Executing TECHMAP pass (map to technology primitives).
+
+18.1. Executing Verilog-2005 frontend: /openLANE_flow/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/openLANE_flow/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+18.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+19. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+20. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+20.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\cmp':
+
+21. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 11
+   Number of wire bits:             17
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $_ANDNOT_                       3
+     $_OR_                           1
+     $_XNOR_                         1
+     $_XOR_                          3
+
+[INFO]: ABC: WireLoad : S_0
+
+22. Executing ABC pass (technology mapping using ABC).
+
+22.1. Extracting gate netlist of module `\cmp' to `<abc-temp-dir>/input.blif'..
+Extracted 8 gates and 17 wires to a netlist network with 9 inputs and 1 outputs.
+
+22.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.07 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.13 sec
+ABC: Memory =    7.77 MB. Time =     0.13 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_8".
+ABC: Setting output load to be 17.650000.
+ABC: + read_constr /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: + fx 
+ABC: The network is unchanged by fast extract.
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 100000 -M 6 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + map -p -B 0.2 -A 0.9 -M 0 
+ABC: The cell areas are multiplied by the factor: <num_fanins> ^ (0.90).
+ABC: The cell delays are multiplied by the factor: <num_fanins> ^ (0.20).
+ABC: + retime -D -D 100000 
+ABC: + buffer -N 5 -S 10000.0 
+ABC: + upsize -D 100000 
+ABC: Current delay (614.97 ps) does not exceed the target delay (100000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 100000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =     16 ( 18.8 %)   Cap =  5.4 ff (  2.3 %)   Area =      107.60 ( 81.2 %)   Delay =   614.97 ps  ( 43.8 %)               
+ABC: Path  0 --       2 : 0    2 pi                       A =   0.00  Df =   4.3   -3.0 ps  S =  15.9 ps  Cin =  0.0 ff  Cout =   3.2 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --      12 : 2    1 sky130_fd_sc_hd__or2b_2  A =   8.76  Df = 286.3 -141.7 ps  S =  57.6 ps  Cin =  1.6 ff  Cout =   4.6 ff  Cmax = 312.2 ff  G =  282  
+ABC: Path  2 --      13 : 2    1 sky130_fd_sc_hd__nand2_2 A =   6.26  Df = 354.9 -165.6 ps  S =  45.5 ps  Cin =  4.4 ff  Cout =   4.6 ff  Cmax = 295.7 ff  G =   99  
+ABC: Path  3 --      17 : 2    1 sky130_fd_sc_hd__nor2_2  A =   6.26  Df = 392.1 -104.2 ps  S =  80.5 ps  Cin =  4.4 ff  Cout =   4.6 ff  Cmax = 141.9 ff  G =  100  
+ABC: Path  4 --      26 : 3    1 sky130_fd_sc_hd__a21oi_2 A =   8.76  Df = 615.0  -85.9 ps  S = 239.1 ps  Cin =  4.6 ff  Cout =  17.6 ff  Cmax = 128.2 ff  G =  386  
+ABC: Start-point = pi1 (\A [0]).  End-point = po0 (\out).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =    9/    1  lat =    0  nd =    16  edge =     32  area =58.35  delay =402.96  lev = 4
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+22.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or2b_2 cells:        2
+ABC RESULTS:        internal signals:        7
+ABC RESULTS:           input signals:        9
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+23. Executing SETUNDEF pass (replace undef values with defined constants).
+
+24. Executing HILOMAP pass (mapping to constant drivers).
+
+25. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+26. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+27. Executing INSBUF pass (insert buffer cells for connected wires).
+
+28. Executing CHECK pass (checking for obvious problems).
+Checking module cmp...
+Warning: Wire cmp.\out is used but has no driver.
+Found and reported 1 problems.
+
+29. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 19
+   Number of wire bits:             25
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     sky130_fd_sc_hd__a21oi_2        1
+     sky130_fd_sc_hd__a22oi_2        1
+     sky130_fd_sc_hd__and2_2         1
+     sky130_fd_sc_hd__inv_2          3
+     sky130_fd_sc_hd__nand2_2        4
+     sky130_fd_sc_hd__nor2_2         3
+     sky130_fd_sc_hd__or2_2          1
+     sky130_fd_sc_hd__or2b_2         2
+
+   Chip area for module '\cmp': 107.603200
+
+30. Executing Verilog backend.
+Dumping module `\cmp'.
+[INFO]: ABC: WireLoad : S_1
+
+31. Executing ABC pass (technology mapping using ABC).
+
+31.1. Extracting gate netlist of module `\cmp' to `<abc-temp-dir>/input.blif'..
+Extracted 8 gates and 17 wires to a netlist network with 9 inputs and 1 outputs.
+
+31.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.07 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.12 sec
+ABC: Memory =    7.77 MB. Time =     0.12 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_8".
+ABC: Setting output load to be 17.650000.
+ABC: + read_constr /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: + fx 
+ABC: The network is unchanged by fast extract.
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 100000 -M 6 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + map -p -B 0.2 -A 0.9 -M 0 
+ABC: The cell areas are multiplied by the factor: <num_fanins> ^ (0.90).
+ABC: The cell delays are multiplied by the factor: <num_fanins> ^ (0.20).
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + map 
+ABC: + 
+ABC: + retime -D -D 100000 
+ABC: + buffer -N 5 -S 10000.0 
+ABC: + upsize -D 100000 
+ABC: Current delay (611.65 ps) does not exceed the target delay (100000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 100000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =     14 ( 21.4 %)   Cap =  5.4 ff (  2.7 %)   Area =       98.84 ( 78.6 %)   Delay =   611.65 ps  ( 28.6 %)               
+ABC: Path  0 --       6 : 0    2 pi                       A =   0.00  Df =   8.2   -5.8 ps  S =  20.2 ps  Cin =  0.0 ff  Cout =   6.3 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --      12 : 2    1 sky130_fd_sc_hd__and2_2  A =   7.51  Df = 166.1  -39.5 ps  S =  36.3 ps  Cin =  1.5 ff  Cout =   2.5 ff  Cmax = 303.0 ff  G =  161  
+ABC: Path  2 --      15 : 4    1 sky130_fd_sc_hd__o22a_2  A =  10.01  Df = 382.2 -127.0 ps  S =  42.2 ps  Cin =  2.4 ff  Cout =   4.6 ff  Cmax = 304.9 ff  G =  188  
+ABC: Path  3 --      24 : 3    1 sky130_fd_sc_hd__a21oi_2 A =   8.76  Df = 611.7 -238.2 ps  S = 239.1 ps  Cin =  4.6 ff  Cout =  17.6 ff  Cmax = 128.2 ff  G =  386  
+ABC: Start-point = pi5 (\A [2]).  End-point = po0 (\out).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =    9/    1  lat =    0  nd =    14  edge =     30  area =50.54  delay =453.54  lev = 4
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+31.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:        1
+ABC RESULTS:        internal signals:        7
+ABC RESULTS:           input signals:        9
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+32. Executing SETUNDEF pass (replace undef values with defined constants).
+
+33. Executing HILOMAP pass (mapping to constant drivers).
+
+34. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+35. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+36. Executing INSBUF pass (insert buffer cells for connected wires).
+
+37. Executing CHECK pass (checking for obvious problems).
+Checking module cmp...
+Warning: Wire cmp.\out is used but has no driver.
+Found and reported 1 problems.
+
+38. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 17
+   Number of wire bits:             23
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     sky130_fd_sc_hd__a21oi_2        1
+     sky130_fd_sc_hd__a2bb2oi_2      1
+     sky130_fd_sc_hd__and2_2         3
+     sky130_fd_sc_hd__inv_2          3
+     sky130_fd_sc_hd__nand2_2        2
+     sky130_fd_sc_hd__nor2_2         3
+     sky130_fd_sc_hd__o22a_2         1
+
+   Chip area for module '\cmp': 98.844800
+
+39. Executing Verilog backend.
+Dumping module `\cmp'.
+[INFO]: ABC: WireLoad : S_2
+
+40. Executing ABC pass (technology mapping using ABC).
+
+40.1. Extracting gate netlist of module `\cmp' to `<abc-temp-dir>/input.blif'..
+Extracted 8 gates and 17 wires to a netlist network with 9 inputs and 1 outputs.
+
+40.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.07 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.12 sec
+ABC: Memory =    7.77 MB. Time =     0.12 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_8".
+ABC: Setting output load to be 17.650000.
+ABC: + read_constr /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: + fx 
+ABC: The network is unchanged by fast extract.
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 100000 -M 6 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + map -p -B 0.2 -A 0.9 -M 0 
+ABC: The cell areas are multiplied by the factor: <num_fanins> ^ (0.90).
+ABC: The cell delays are multiplied by the factor: <num_fanins> ^ (0.20).
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + map 
+ABC: + 
+ABC: + retime -D -D 100000 
+ABC: + buffer -N 5 -S 10000.0 
+ABC: + upsize -D 100000 
+ABC: Current delay (611.65 ps) does not exceed the target delay (100000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 100000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =     14 ( 21.4 %)   Cap =  5.4 ff (  2.7 %)   Area =       98.84 ( 78.6 %)   Delay =   611.65 ps  ( 28.6 %)               
+ABC: Path  0 --       6 : 0    2 pi                       A =   0.00  Df =   8.2   -5.8 ps  S =  20.2 ps  Cin =  0.0 ff  Cout =   6.3 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --      12 : 2    1 sky130_fd_sc_hd__and2_2  A =   7.51  Df = 166.1  -39.5 ps  S =  36.3 ps  Cin =  1.5 ff  Cout =   2.5 ff  Cmax = 303.0 ff  G =  161  
+ABC: Path  2 --      15 : 4    1 sky130_fd_sc_hd__o22a_2  A =  10.01  Df = 382.2 -127.0 ps  S =  42.2 ps  Cin =  2.4 ff  Cout =   4.6 ff  Cmax = 304.9 ff  G =  188  
+ABC: Path  3 --      24 : 3    1 sky130_fd_sc_hd__a21oi_2 A =   8.76  Df = 611.7 -238.2 ps  S = 239.1 ps  Cin =  4.6 ff  Cout =  17.6 ff  Cmax = 128.2 ff  G =  386  
+ABC: Start-point = pi5 (\A [2]).  End-point = po0 (\out).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =    9/    1  lat =    0  nd =    14  edge =     30  area =50.54  delay =453.54  lev = 4
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+40.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:        1
+ABC RESULTS:        internal signals:        7
+ABC RESULTS:           input signals:        9
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+41. Executing SETUNDEF pass (replace undef values with defined constants).
+
+42. Executing HILOMAP pass (mapping to constant drivers).
+
+43. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+44. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+45. Executing INSBUF pass (insert buffer cells for connected wires).
+
+46. Executing CHECK pass (checking for obvious problems).
+Checking module cmp...
+Warning: Wire cmp.\out is used but has no driver.
+Found and reported 1 problems.
+
+47. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 17
+   Number of wire bits:             23
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     sky130_fd_sc_hd__a21oi_2        1
+     sky130_fd_sc_hd__a2bb2oi_2      1
+     sky130_fd_sc_hd__and2_2         3
+     sky130_fd_sc_hd__inv_2          3
+     sky130_fd_sc_hd__nand2_2        2
+     sky130_fd_sc_hd__nor2_2         3
+     sky130_fd_sc_hd__o22a_2         1
+
+   Chip area for module '\cmp': 98.844800
+
+48. Executing Verilog backend.
+Dumping module `\cmp'.
+[INFO]: ABC: WireLoad : S_3
+
+49. Executing ABC pass (technology mapping using ABC).
+
+49.1. Extracting gate netlist of module `\cmp' to `<abc-temp-dir>/input.blif'..
+Extracted 8 gates and 17 wires to a netlist network with 9 inputs and 1 outputs.
+
+49.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.08 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.13 sec
+ABC: Memory =    7.77 MB. Time =     0.13 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_8".
+ABC: Setting output load to be 17.650000.
+ABC: + read_constr /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: + fx 
+ABC: The network is unchanged by fast extract.
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 100000 -M 5 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + amap -m -Q 0.1 -F 20 -A 20 -C 5000 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + map -p -B 0.2 -A 0.9 -M 0 
+ABC: The cell areas are multiplied by the factor: <num_fanins> ^ (0.90).
+ABC: The cell delays are multiplied by the factor: <num_fanins> ^ (0.20).
+ABC: + retime -D -D 100000 
+ABC: + buffer -N 5 -S 10000.0 
+ABC: + upsize -D 100000 
+ABC: Current delay (529.07 ps) does not exceed the target delay (100000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 100000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =     14 ( 21.4 %)   Cap =  5.8 ff (  2.7 %)   Area =       98.84 ( 78.6 %)   Delay =   529.07 ps  ( 35.7 %)               
+ABC: Path  0 --       3 : 0    2 pi                       A =   0.00  Df =   8.0   -5.5 ps  S =  20.0 ps  Cin =  0.0 ff  Cout =   6.1 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --      20 : 2    1 sky130_fd_sc_hd__or2_2   A =   6.26  Df = 283.8 -182.6 ps  S =  59.6 ps  Cin =  1.5 ff  Cout =   4.5 ff  Cmax = 299.4 ff  G =  291  
+ABC: Path  2 --      22 : 4    1 sky130_fd_sc_hd__a22oi_2 A =  12.51  Df = 414.6 -264.3 ps  S = 145.1 ps  Cin =  4.3 ff  Cout =   5.1 ff  Cmax = 170.3 ff  G =  112  
+ABC: Path  3 --      24 : 3    1 sky130_fd_sc_hd__a21oi_2 A =   8.76  Df = 529.1   -0.3 ps  S = 239.1 ps  Cin =  4.6 ff  Cout =  17.6 ff  Cmax = 128.2 ff  G =  386  
+ABC: Start-point = pi2 (\B [1]).  End-point = po0 (\out).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =    9/    1  lat =    0  nd =    14  edge =     30  area =49.92  delay =388.06  lev = 4
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+49.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:        2
+ABC RESULTS:        internal signals:        7
+ABC RESULTS:           input signals:        9
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+50. Executing SETUNDEF pass (replace undef values with defined constants).
+
+51. Executing HILOMAP pass (mapping to constant drivers).
+
+52. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+53. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+54. Executing INSBUF pass (insert buffer cells for connected wires).
+
+55. Executing CHECK pass (checking for obvious problems).
+Checking module cmp...
+Warning: Wire cmp.\out is used but has no driver.
+Found and reported 1 problems.
+
+56. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 17
+   Number of wire bits:             23
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     sky130_fd_sc_hd__a21oi_2        1
+     sky130_fd_sc_hd__a22oi_2        1
+     sky130_fd_sc_hd__a2bb2oi_2      1
+     sky130_fd_sc_hd__and2_2         1
+     sky130_fd_sc_hd__inv_2          3
+     sky130_fd_sc_hd__nand2_2        4
+     sky130_fd_sc_hd__nor2_2         1
+     sky130_fd_sc_hd__or2_2          2
+
+   Chip area for module '\cmp': 98.844800
+
+57. Executing Verilog backend.
+Dumping module `\cmp'.
+[INFO]: ABC: WireLoad : S_4
+
+58. Executing ABC pass (technology mapping using ABC).
+
+58.1. Extracting gate netlist of module `\cmp' to `<abc-temp-dir>/input.blif'..
+Extracted 8 gates and 17 wires to a netlist network with 9 inputs and 1 outputs.
+
+58.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.07 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.12 sec
+ABC: Memory =    7.77 MB. Time =     0.12 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_8".
+ABC: Setting output load to be 17.650000.
+ABC: + read_constr /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: + fx 
+ABC: The network is unchanged by fast extract.
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 100000 -M 5 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + amap -m -Q 0.1 -F 20 -A 20 -C 5000 
+ABC: + retime -D -D 100000 
+ABC: + buffer -N 5 -S 10000.0 
+ABC: Node 12 has dup fanin 3.
+ABC: Node 12 has dup fanin 4.
+ABC: Node 12 has dup fanin 3.
+ABC: Node 12 has dup fanin 4.
+ABC: Node 13 has dup fanin 5.
+ABC: Node 13 has dup fanin 6.
+ABC: Node 13 has dup fanin 5.
+ABC: Node 13 has dup fanin 6.
+ABC: Node 14 has dup fanin 1.
+ABC: Node 14 has dup fanin 2.
+ABC: Node 14 has dup fanin 1.
+ABC: Node 14 has dup fanin 2.
+ABC: Node 15 has dup fanin 7.
+ABC: Node 15 has dup fanin 8.
+ABC: Node 15 has dup fanin 7.
+ABC: Node 15 has dup fanin 8.
+ABC: + upsize -D 100000 
+ABC: Current delay (691.43 ps) does not exceed the target delay (100000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 100000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =      7 ( 28.6 %)   Cap =  4.1 ff (  3.6 %)   Area =       63.81 ( 71.4 %)   Delay =   604.40 ps  ( 85.7 %)               
+ABC: Path  0 --       7 : 0    2 pi                        A =   0.00  Df =   4.7   -3.3 ps  S =  16.2 ps  Cin =  0.0 ff  Cout =   3.5 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --      14 : 4    1 sky130_fd_sc_hd__a2bb2o_2 A =  11.26  Df = 251.8  -37.7 ps  S =  41.5 ps  Cin =  1.7 ff  Cout =   2.5 ff  Cmax = 300.3 ff  G =  137  
+ABC: Path  2 --      16 : 5    1 sky130_fd_sc_hd__a41o_2   A =  11.26  Df = 517.6 -114.1 ps  S =  49.4 ps  Cin =  2.3 ff  Cout =   4.6 ff  Cmax = 325.0 ff  G =  191  
+ABC: Path  3 --      17 : 1    1 sky130_fd_sc_hd__inv_2    A =   3.75  Df = 604.4 -145.9 ps  S =  86.7 ps  Cin =  4.5 ff  Cout =  17.6 ff  Cmax = 331.4 ff  G =  395  
+ABC: Start-point = pi6 (\B [3]).  End-point = po0 (\out).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =    9/    1  lat =    0  nd =     7  edge =     23  area =63.80  delay = 3.00  lev = 3
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+58.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a41o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        2
+ABC RESULTS:        internal signals:        7
+ABC RESULTS:           input signals:        9
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+59. Executing SETUNDEF pass (replace undef values with defined constants).
+
+60. Executing HILOMAP pass (mapping to constant drivers).
+
+61. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+62. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+63. Executing INSBUF pass (insert buffer cells for connected wires).
+
+64. Executing CHECK pass (checking for obvious problems).
+Checking module cmp...
+Warning: Wire cmp.\out is used but has no driver.
+Found and reported 1 problems.
+
+65. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 10
+   Number of wire bits:             16
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     sky130_fd_sc_hd__a2bb2o_2       4
+     sky130_fd_sc_hd__a41o_2         1
+     sky130_fd_sc_hd__inv_2          2
+
+   Chip area for module '\cmp': 63.811200
+
+66. Executing Verilog backend.
+Dumping module `\cmp'.
+[INFO]: ABC: WireLoad : S_5
+
+67. Executing ABC pass (technology mapping using ABC).
+
+67.1. Extracting gate netlist of module `\cmp' to `<abc-temp-dir>/input.blif'..
+Extracted 8 gates and 17 wires to a netlist network with 9 inputs and 1 outputs.
+
+67.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.07 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.12 sec
+ABC: Memory =    7.77 MB. Time =     0.12 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_8".
+ABC: Setting output load to be 17.650000.
+ABC: + read_constr /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: + fx 
+ABC: The network is unchanged by fast extract.
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 100000 -M 5 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + amap -m -Q 0.1 -F 20 -A 20 -C 5000 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + amap -m -Q 0.1 -F 20 -A 20 -C 5000 
+ABC: + retime -D -D 100000 
+ABC: + buffer -N 5 -S 10000.0 
+ABC: Node 12 has dup fanin 7.
+ABC: Node 12 has dup fanin 8.
+ABC: Node 12 has dup fanin 7.
+ABC: Node 12 has dup fanin 8.
+ABC: Node 13 has dup fanin 1.
+ABC: Node 13 has dup fanin 2.
+ABC: Node 13 has dup fanin 1.
+ABC: Node 13 has dup fanin 2.
+ABC: Node 14 has dup fanin 5.
+ABC: Node 14 has dup fanin 6.
+ABC: Node 14 has dup fanin 5.
+ABC: Node 14 has dup fanin 6.
+ABC: Node 15 has dup fanin 3.
+ABC: Node 15 has dup fanin 4.
+ABC: Node 15 has dup fanin 3.
+ABC: Node 15 has dup fanin 4.
+ABC: + upsize -D 100000 
+ABC: Current delay (691.43 ps) does not exceed the target delay (100000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 100000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =      7 ( 28.6 %)   Cap =  4.8 ff (  3.6 %)   Area =       67.56 ( 71.4 %)   Delay =   604.40 ps  ( 71.4 %)               
+ABC: Path  0 --       3 : 0    2 pi                        A =   0.00  Df =   4.7   -3.3 ps  S =  16.2 ps  Cin =  0.0 ff  Cout =   3.5 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --      14 : 4    1 sky130_fd_sc_hd__a2bb2o_2 A =  11.26  Df = 251.8  -37.7 ps  S =  41.5 ps  Cin =  1.7 ff  Cout =   2.5 ff  Cmax = 300.3 ff  G =  137  
+ABC: Path  2 --      16 : 5    1 sky130_fd_sc_hd__a41o_2   A =  11.26  Df = 517.6 -114.1 ps  S =  49.4 ps  Cin =  2.3 ff  Cout =   4.6 ff  Cmax = 325.0 ff  G =  191  
+ABC: Path  3 --      17 : 1    1 sky130_fd_sc_hd__inv_2    A =   3.75  Df = 604.4 -145.8 ps  S =  86.7 ps  Cin =  4.5 ff  Cout =  17.6 ff  Cmax = 331.4 ff  G =  395  
+ABC: Start-point = pi2 (\B [1]).  End-point = po0 (\out).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =    9/    1  lat =    0  nd =     7  edge =     23  area =67.55  delay = 3.00  lev = 3
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+67.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a41o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2ai_2 cells:        1
+ABC RESULTS:        internal signals:        7
+ABC RESULTS:           input signals:        9
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+68. Executing SETUNDEF pass (replace undef values with defined constants).
+
+69. Executing HILOMAP pass (mapping to constant drivers).
+
+70. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+71. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+72. Executing INSBUF pass (insert buffer cells for connected wires).
+
+73. Executing CHECK pass (checking for obvious problems).
+Checking module cmp...
+Warning: Wire cmp.\out is used but has no driver.
+Found and reported 1 problems.
+
+74. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 10
+   Number of wire bits:             16
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     sky130_fd_sc_hd__a2bb2o_2       3
+     sky130_fd_sc_hd__a41o_2         1
+     sky130_fd_sc_hd__inv_2          2
+     sky130_fd_sc_hd__o2bb2ai_2      1
+
+   Chip area for module '\cmp': 67.564800
+
+75. Executing Verilog backend.
+Dumping module `\cmp'.
+[INFO]: ABC: WireLoad : S_6
+
+76. Executing ABC pass (technology mapping using ABC).
+
+76.1. Extracting gate netlist of module `\cmp' to `<abc-temp-dir>/input.blif'..
+Extracted 8 gates and 17 wires to a netlist network with 9 inputs and 1 outputs.
+
+76.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.08 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/openLANE_flow/cmp/runs/run_three/tmp/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.13 sec
+ABC: Memory =    7.77 MB. Time =     0.13 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_8".
+ABC: Setting output load to be 17.650000.
+ABC: + read_constr /openLANE_flow/cmp/runs/run_three/tmp/synthesis/yosys.sdc 
+ABC: + fx 
+ABC: The network is unchanged by fast extract.
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + retime -D -D 100000 -M 5 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: Warning: The choice nodes in the original AIG are removed by strashing.
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + amap -m -Q 0.1 -F 20 -A 20 -C 5000 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + amap -m -Q 0.1 -F 20 -A 20 -C 5000 
+ABC: + retime -D -D 100000 
+ABC: + buffer -N 5 -S 10000.0 
+ABC: Node 12 has dup fanin 3.
+ABC: Node 12 has dup fanin 4.
+ABC: Node 12 has dup fanin 3.
+ABC: Node 12 has dup fanin 4.
+ABC: Node 13 has dup fanin 1.
+ABC: Node 13 has dup fanin 2.
+ABC: Node 13 has dup fanin 1.
+ABC: Node 13 has dup fanin 2.
+ABC: Node 14 has dup fanin 5.
+ABC: Node 14 has dup fanin 6.
+ABC: Node 14 has dup fanin 5.
+ABC: Node 14 has dup fanin 6.
+ABC: Node 15 has dup fanin 7.
+ABC: Node 15 has dup fanin 8.
+ABC: Node 15 has dup fanin 7.
+ABC: Node 15 has dup fanin 8.
+ABC: + upsize -D 100000 
+ABC: Current delay (691.43 ps) does not exceed the target delay (100000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 100000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =      7 ( 28.6 %)   Cap =  4.8 ff (  3.6 %)   Area =       67.56 ( 71.4 %)   Delay =   604.40 ps  ( 71.4 %)               
+ABC: Path  0 --       7 : 0    2 pi                        A =   0.00  Df =   4.7   -3.3 ps  S =  16.2 ps  Cin =  0.0 ff  Cout =   3.5 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --      14 : 4    1 sky130_fd_sc_hd__a2bb2o_2 A =  11.26  Df = 251.8  -37.7 ps  S =  41.5 ps  Cin =  1.7 ff  Cout =   2.5 ff  Cmax = 300.3 ff  G =  137  
+ABC: Path  2 --      16 : 5    1 sky130_fd_sc_hd__a41o_2   A =  11.26  Df = 517.6 -114.1 ps  S =  49.4 ps  Cin =  2.3 ff  Cout =   4.6 ff  Cmax = 325.0 ff  G =  191  
+ABC: Path  3 --      17 : 1    1 sky130_fd_sc_hd__inv_2    A =   3.75  Df = 604.4 -145.8 ps  S =  86.7 ps  Cin =  4.5 ff  Cout =  17.6 ff  Cmax = 331.4 ff  G =  395  
+ABC: Start-point = pi6 (\B [3]).  End-point = po0 (\out).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =    9/    1  lat =    0  nd =     7  edge =     23  area =67.55  delay = 3.00  lev = 3
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+76.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a41o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2ai_2 cells:        1
+ABC RESULTS:        internal signals:        7
+ABC RESULTS:           input signals:        9
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+77. Executing SETUNDEF pass (replace undef values with defined constants).
+
+78. Executing HILOMAP pass (mapping to constant drivers).
+
+79. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+80. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cmp..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+81. Executing INSBUF pass (insert buffer cells for connected wires).
+
+82. Executing CHECK pass (checking for obvious problems).
+Checking module cmp...
+Warning: Wire cmp.\out is used but has no driver.
+Found and reported 1 problems.
+
+83. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 10
+   Number of wire bits:             16
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     sky130_fd_sc_hd__a2bb2o_2       3
+     sky130_fd_sc_hd__a41o_2         1
+     sky130_fd_sc_hd__inv_2          2
+     sky130_fd_sc_hd__o2bb2ai_2      1
+
+   Chip area for module '\cmp': 67.564800
+
+84. Executing Verilog backend.
+Dumping module `\cmp'.
+
+Warnings: 1 unique messages, 7 total
+End of script. Logfile hash: 0110062077, CPU: user 6.03s system 0.09s, MEM: 44.07 MB peak
+Yosys 0.9+4052 (git sha1 d061b0e, gcc 8.3.1 -fPIC -Os)
+Time spent: 65% 10x stat (5 sec), 25% 8x abc (2 sec), ...

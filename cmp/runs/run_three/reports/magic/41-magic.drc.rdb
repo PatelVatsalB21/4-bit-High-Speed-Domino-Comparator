@@ -1,0 +1,6 @@
+$cmp
+ 100
+r_0_met5.2
+500 500 2 Nov 29 03:26:39 2020
+Rule File Pathname: /openLANE_flow/cmp/runs/run_three/reports/magic/41-magic.drc
+met5.2: Metal5 spacing < 1.6um 

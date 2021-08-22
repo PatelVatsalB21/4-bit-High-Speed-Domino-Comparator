@@ -1,0 +1,161 @@
+OpenROAD 1 4d4d7205fd0292dbf3fae55fad9109b3f0bd5786
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/cmp/runs/run_three/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 440 library cells
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/cmp/runs/run_three/tmp/merged_unpadded.lef
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 47, instance input1:A not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 50, net input1 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 56, net input1 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 60, net input1 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 60, net input1 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 66, instance input2:A not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 71, net input2 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 74, net input2 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 76, net input2 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 76, net input2 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 81, instance input3:A not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 84, net input3 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 90, net input3 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 95, net input3 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 95, net input3 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 101, instance input4:A not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 105, net input4 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 109, net input4 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 111, net input4 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 111, net input4 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 116, instance input5:A not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 123, net input5 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 127, net input5 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 130, net input5 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 130, net input5 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 135, instance input6:A not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 138, net input6 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 144, net input6 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 149, net input6 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 149, net input6 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 156, instance input7:A not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 165, net input7 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 173, net input7 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 175, net input7 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 175, net input7 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 180, instance input8:A not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 186, net input8 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 191, net input8 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 191, net input8 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 192, net input8 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 269, instance _12__2:A not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 273, net _12__2 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 278, net _12__2 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 280, net _12__2 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 280, net _12__2 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 288, instance _10__1:A not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 293, net _10__1 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 295, net _10__1 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 297, net _10__1 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 297, net _10__1 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 300, net net1 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 302, instance input1:X not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 323, net net10 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 326, instance _10__1:Y not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 341, net net11 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 343, instance output9:A not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 344, instance _12__2:Y not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 359, net net2 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 361, instance input2:X not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 388, net net3 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 390, instance input3:X not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 417, net net4 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 419, instance input4:X not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 439, net net5 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 441, instance input5:X not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 466, net net6 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 468, instance input6:X not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 493, net net7 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 495, instance input7:X not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 516, net net8 not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 518, instance input8:X not found.
+[WARNING STA-0172] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 545, instance output9:X not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 548, net output9 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 553, net output9 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 556, net output9 not found.
+[WARNING STA-0174] /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.spef line 556, net output9 not found.
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 20.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 20.0
+set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]
+tns 0.00
+tns 0.00
+wns 0.00
+wns 0.00
+No paths found.
+Startpoint: clk (clock source 'clk')
+Endpoint: out (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.13    0.13   clock network delay
+                                  0.13 ^ out (out)
+                                  0.13   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                        -20.00  -20.00   output external delay
+                                -20.00   data required time
+-----------------------------------------------------------------------------
+                                -20.00   data required time
+                                 -0.13   data arrival time
+-----------------------------------------------------------------------------
+                                 20.13   slack (MET)
+
+
+Startpoint: clk (clock source 'clk')
+Endpoint: out (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00   50.00   50.00   clock clk (fall edge)
+                          0.25   50.25   clock network delay
+                                 50.25 v out (out)
+                                 50.25   data arrival time
+
+                  0.00  100.00  100.00   clock clk (rise edge)
+                          0.00  100.00   clock network delay (ideal)
+                          0.00  100.00   clock reconvergence pessimism
+                        -20.00   80.00   output external delay
+                                 80.00   data required time
+-----------------------------------------------------------------------------
+                                 80.00   data required time
+                                -50.25   data arrival time
+-----------------------------------------------------------------------------
+                                 29.75   slack (MET)
+
+
+No paths found.

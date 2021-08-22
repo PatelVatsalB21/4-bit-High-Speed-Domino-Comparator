@@ -1,0 +1,198 @@
+OpenROAD 1 4d4d7205fd0292dbf3fae55fad9109b3f0bd5786
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/cmp/runs/run_one/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 440 library cells
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/cmp/runs/run_one/tmp/merged_unpadded.lef
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 30, instance PHY_0 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 30, instance PHY_0 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 30, instance PHY_0 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 30, instance PHY_0 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 34, instance PHY_1 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 34, instance PHY_1 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 34, instance PHY_1 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 34, instance PHY_1 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 38, instance PHY_10 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 38, instance PHY_10 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 38, instance PHY_10 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 38, instance PHY_10 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 42, instance PHY_11 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 42, instance PHY_11 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 42, instance PHY_11 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 42, instance PHY_11 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 46, instance PHY_2 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 46, instance PHY_2 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 46, instance PHY_2 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 46, instance PHY_2 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 50, instance PHY_3 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 50, instance PHY_3 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 50, instance PHY_3 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 50, instance PHY_3 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 54, instance PHY_4 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 54, instance PHY_4 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 54, instance PHY_4 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 54, instance PHY_4 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 58, instance PHY_5 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 58, instance PHY_5 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 58, instance PHY_5 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 58, instance PHY_5 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 62, instance PHY_6 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 62, instance PHY_6 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 62, instance PHY_6 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 62, instance PHY_6 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 66, instance PHY_7 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 66, instance PHY_7 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 66, instance PHY_7 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 66, instance PHY_7 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 70, instance PHY_8 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 70, instance PHY_8 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 70, instance PHY_8 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 70, instance PHY_8 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 74, instance PHY_9 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 74, instance PHY_9 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 74, instance PHY_9 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 74, instance PHY_9 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 86, instance _06_ port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 86, instance _06_ port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 86, instance _06_ port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 86, instance _06_ port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 95, instance _07_ port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 95, instance _07_ port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 95, instance _07_ port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 95, instance _07_ port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 104, instance _08_ port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 104, instance _08_ port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 104, instance _08_ port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 104, instance _08_ port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 113, instance _09_ port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 113, instance _09_ port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 113, instance _09_ port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 113, instance _09_ port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 122, instance _10_ port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 122, instance _10_ port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 122, instance _10_ port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 122, instance _10_ port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 128, instance _11_ port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 128, instance _11_ port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 128, instance _11_ port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 128, instance _11_ port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 138, instance _12_ port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 138, instance _12_ port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 138, instance _12_ port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 138, instance _12_ port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 144, instance input1 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 144, instance input1 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 144, instance input1 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 144, instance input1 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 150, instance input2 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 150, instance input2 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 150, instance input2 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 150, instance input2 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 156, instance input3 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 156, instance input3 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 156, instance input3 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 156, instance input3 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 162, instance input4 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 162, instance input4 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 162, instance input4 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 162, instance input4 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 168, instance input5 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 168, instance input5 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 168, instance input5 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 168, instance input5 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 174, instance input6 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 174, instance input6 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 174, instance input6 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 174, instance input6 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 180, instance input7 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 180, instance input7 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 180, instance input7 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 180, instance input7 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 186, instance input8 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 186, instance input8 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 186, instance input8 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 186, instance input8 port VPWR not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 192, instance output9 port VGND not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 192, instance output9 port VNB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 192, instance output9 port VPB not found.
+[WARNING STA-0201] /openLANE_flow/cmp/runs/run_one/results/synthesis/cmp.synthesis_optimized.v line 192, instance output9 port VPWR not found.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__tapvpwrvgnd_1 has no liberty cell.
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 20.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 20.0
+set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]
+tns 0.00
+tns 0.00
+wns 0.00
+wns 0.00
+No paths found.
+Startpoint: clk (clock source 'clk')
+Endpoint: out (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.24    0.24   clock network delay
+                                  0.24 ^ out (out)
+                                  0.24   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                        -20.00  -20.00   output external delay
+                                -20.00   data required time
+-----------------------------------------------------------------------------
+                                -20.00   data required time
+                                 -0.24   data arrival time
+-----------------------------------------------------------------------------
+                                 20.24   slack (MET)
+
+
+Startpoint: clk (clock source 'clk')
+Endpoint: out (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00   50.00   50.00   clock clk (fall edge)
+                          0.52   50.52   clock network delay
+                                 50.52 v out (out)
+                                 50.52   data arrival time
+
+                  0.00  100.00  100.00   clock clk (rise edge)
+                          0.00  100.00   clock network delay (ideal)
+                          0.00  100.00   clock reconvergence pessimism
+                        -20.00   80.00   output external delay
+                                 80.00   data required time
+-----------------------------------------------------------------------------
+                                 80.00   data required time
+                                -50.52   data arrival time
+-----------------------------------------------------------------------------
+                                 29.48   slack (MET)
+
+
+No paths found.

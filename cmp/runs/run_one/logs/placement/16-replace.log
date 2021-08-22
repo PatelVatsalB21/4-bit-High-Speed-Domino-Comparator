@@ -1,0 +1,235 @@
+OpenROAD 1 4d4d7205fd0292dbf3fae55fad9109b3f0bd5786
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/cmp/runs/run_one/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 440 library cells
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/cmp/runs/run_one/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /openLANE_flow/cmp/runs/run_one/tmp/floorplan/15-pdn.def
+[INFO ODB-0128] Design: cmp
+[INFO ODB-0130]     Created 12 pins.
+[INFO ODB-0131]     Created 23 components and 114 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 84 connections.
+[INFO ODB-0133]     Created 16 nets and 30 connections.
+[INFO ODB-0134] Finished DEF file: /openLANE_flow/cmp/runs/run_one/tmp/floorplan/15-pdn.def
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 23000 27200
+[INFO GPL-0006] NumInstances: 23
+[INFO GPL-0007] NumPlaceInstances: 7
+[INFO GPL-0008] NumFixedInstances: 16
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 16
+[INFO GPL-0011] NumPins: 40
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 28900 39620
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 23000 27200
+[INFO GPL-0016] CoreArea: 285273600
+[INFO GPL-0017] NonPlaceInstsArea: 50048000
+[INFO GPL-0018] PlaceInstsArea: 63811200
+[INFO GPL-0019] Util(%): 27.13
+[INFO GPL-0020] StdInstsArea: 63811200
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG Error: 0.00000000 HPWL: 408370
+[InitialPlace]  Iter: 2 CG Error: 0.00000009 HPWL: 341357
+[InitialPlace]  Iter: 3 CG Error: 0.00000005 HPWL: 342466
+[InitialPlace]  Iter: 4 CG Error: 0.00000003 HPWL: 342616
+[InitialPlace]  Iter: 5 CG Error: 0.00000004 HPWL: 342665
+[INFO GPL-0031] FillerInit: NumGCells: 15
+[INFO GPL-0032] FillerInit: NumGNets: 16
+[INFO GPL-0033] FillerInit: NumGPins: 40
+[INFO GPL-0023] TargetDensity: 0.60
+[INFO GPL-0024] AveragePlaceInstArea: 9115885
+[INFO GPL-0025] IdealBinArea: 15193141
+[INFO GPL-0026] IdealBinCnt: 18
+[INFO GPL-0027] TotalBinArea: 285273600
+[INFO GPL-0028] BinCnt: 4 4
+[INFO GPL-0029] BinSize: 4370 4080
+[INFO GPL-0030] NumBins: 16
+[NesterovSolve] Iter: 1 overflow: 0.213417 HPWL: 251643
+[INFO GPL-0100] worst slack 1e+30
+[WARNING GPL-0102] No slacks found. Timing-driven mode disabled.
+[NesterovSolve] Snapshot saved at iter = 0
+[NesterovSolve] Iter: 10 overflow: 0.240217 HPWL: 252182
+[NesterovSolve] Iter: 20 overflow: 0.237472 HPWL: 253178
+[NesterovSolve] Iter: 30 overflow: 0.239978 HPWL: 252891
+[NesterovSolve] Iter: 40 overflow: 0.239873 HPWL: 252917
+[NesterovSolve] Iter: 50 overflow: 0.239756 HPWL: 252987
+[NesterovSolve] Iter: 60 overflow: 0.239636 HPWL: 252918
+[NesterovSolve] Iter: 70 overflow: 0.239821 HPWL: 252956
+[NesterovSolve] Iter: 80 overflow: 0.23987 HPWL: 252951
+[NesterovSolve] Iter: 90 overflow: 0.239999 HPWL: 252944
+[NesterovSolve] Iter: 100 overflow: 0.240176 HPWL: 252961
+[NesterovSolve] Iter: 110 overflow: 0.240397 HPWL: 252961
+[NesterovSolve] Iter: 120 overflow: 0.24076 HPWL: 252974
+[NesterovSolve] Iter: 130 overflow: 0.241031 HPWL: 252982
+[NesterovSolve] Iter: 140 overflow: 0.240939 HPWL: 252990
+[NesterovSolve] Iter: 150 overflow: 0.240797 HPWL: 252988
+[NesterovSolve] Iter: 160 overflow: 0.240548 HPWL: 252991
+[NesterovSolve] Iter: 170 overflow: 0.24023 HPWL: 252990
+[NesterovSolve] Iter: 180 overflow: 0.239812 HPWL: 252976
+[NesterovSolve] Iter: 190 overflow: 0.239853 HPWL: 253016
+[NesterovSolve] Iter: 200 overflow: 0.238685 HPWL: 253064
+[NesterovSolve] Iter: 210 overflow: 0.237493 HPWL: 253092
+[NesterovSolve] Iter: 220 overflow: 0.235051 HPWL: 253090
+[NesterovSolve] Iter: 230 overflow: 0.23273 HPWL: 253236
+[NesterovSolve] Iter: 240 overflow: 0.229142 HPWL: 253289
+[NesterovSolve] Iter: 250 overflow: 0.221915 HPWL: 253425
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GRT-0020] Min routing layer: li1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0224] Chose via L1M1_PR as default.
+[INFO GRT-0224] Chose via M1M2_PR as default.
+[INFO GRT-0224] Chose via M2M3_PR as default.
+[INFO GRT-0224] Chose via M3M4_PR as default.
+[INFO GRT-0224] Chose via M4M5_PR as default.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 418
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 3
+[INFO GRT-0017] Processing 286 blockages on layer li1.
+[INFO GRT-0017] Processing 53 blockages on layer met1.
+[INFO GRT-0017] Processing 5 blockages on layer met4.
+[INFO GRT-0017] Processing 5 blockages on layer met5.
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical          300           223          25.67%
+met1       Horizontal        400           305          23.75%
+met2       Vertical          300           244          18.67%
+met3       Horizontal        200           165          17.50%
+met4       Vertical          120            94          21.67%
+met5       Horizontal         40            30          25.00%
+---------------------------------------------------------------
+
+[INFO GRT-0111] Final number of vias: 22
+[INFO GRT-0112] Final usage 3D: 85
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                223             8            3.59%             0 /  0 /  0
+met1               305            10            3.28%             0 /  0 /  0
+met2               244             1            0.41%             0 /  0 /  0
+met3               165             0            0.00%             0 /  0 /  0
+met4                94             0            0.00%             0 /  0 /  0
+met5                30             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             1061            19            1.79%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 462 um
+[INFO GPL-0036] TileLxLy: 0 0
+[INFO GPL-0037] TileSize: 6900 6900
+[INFO GPL-0038] TileCnt: 4 6
+[INFO GPL-0039] numRoutingLayers: 6
+[INFO GPL-0040] NumTiles: 24
+[INFO GPL-0063] TotalRouteOverflowH2: 0.0
+[INFO GPL-0064] TotalRouteOverflowV2: 0.0
+[INFO GPL-0065] OverflowTileCnt2: 0
+[INFO GPL-0066] 0.5%RC: 0.5
+[INFO GPL-0067] 1.0%RC: 0.5
+[INFO GPL-0068] 2.0%RC: 0.5
+[INFO GPL-0069] 5.0%RC: 0.5
+[INFO GPL-0070] 0.5rcK: 1.0
+[INFO GPL-0071] 1.0rcK: 1.0
+[INFO GPL-0072] 2.0rcK: 0.0
+[INFO GPL-0073] 5.0rcK: 0.0
+[INFO GPL-0074] FinalRC: 0.5
+[NesterovSolve] Iter: 260 overflow: 0.211666 HPWL: 253081
+[NesterovSolve] Iter: 270 overflow: 0.199095 HPWL: 253878
+[NesterovSolve] Iter: 280 overflow: 0.185581 HPWL: 254985
+[NesterovSolve] Iter: 290 overflow: 0.163047 HPWL: 256242
+[NesterovSolve] Iter: 300 overflow: 0.157002 HPWL: 258495
+[NesterovSolve] Iter: 310 overflow: 0.131689 HPWL: 258487
+[NesterovSolve] Iter: 320 overflow: 0.0998501 HPWL: 258631
+[NesterovSolve] Finished with Overflow: 0.099850
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 20.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 20.0
+set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]
+No paths found.
+Startpoint: clk (clock source 'clk')
+Endpoint: out (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.15    0.15   clock network delay
+                                  0.15 ^ out (out)
+                                  0.15   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                        -20.00  -20.00   output external delay
+                                -20.00   data required time
+-----------------------------------------------------------------------------
+                                -20.00   data required time
+                                 -0.15   data arrival time
+-----------------------------------------------------------------------------
+                                 20.15   slack (MET)
+
+
+Startpoint: clk (clock source 'clk')
+Endpoint: out (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00   50.00   50.00   clock clk (fall edge)
+                          0.33   50.33   clock network delay
+                                 50.33 v out (out)
+                                 50.33   data arrival time
+
+                  0.00  100.00  100.00   clock clk (rise edge)
+                          0.00  100.00   clock network delay (ideal)
+                          0.00  100.00   clock reconvergence pessimism
+                        -20.00   80.00   output external delay
+                                 80.00   data required time
+-----------------------------------------------------------------------------
+                                 80.00   data required time
+                                -50.33   data arrival time
+-----------------------------------------------------------------------------
+                                 29.67   slack (MET)
+
+
+No paths found.
+wns 0.00
+tns 0.00

@@ -1,0 +1,37 @@
+
+Magic 8.3 revision 183 - Compiled on Thu Jul  1 10:06:54 UTC 2021.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/openLANE_flow/scripts/magic/drc.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: cmp
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__a2bb2o_1".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__a41o_2".
+Reading "cmp".
+[INFO]: Loading cmp
+
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+[INFO]: COUNT: 56
+[INFO]: Should be divided by 3 or 4
+[INFO]: DRC Checking DONE (/openLANE_flow/cmp/runs/run_three/reports/magic/78-magic.drc)
+[INFO]: Saving mag view with DRC errors(/openLANE_flow/cmp/runs/run_three/results/magic/cmp.drc.mag)
+[INFO]: Saved
