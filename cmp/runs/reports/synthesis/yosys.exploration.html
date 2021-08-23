@@ -1,0 +1,229 @@
+
+<html>
+
+<head>
+  <title>Scatter Chart</title>
+  <link href='table.css' rel='stylesheet' type='text/css' media='screen' />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js'></script>
+  <script src='utils.js'></script>
+  <style>
+  canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  </style>
+</head>
+
+<body>
+<div style='width:50%''>
+
+<table cellspacing='0' cellpadding='0' class='demo-table' >
+<tr>
+  <th bgcolor='B0C4DE'>Best Area</th>
+  <th bgcolor='B0C4DE'>Best Gate Count</th>
+  <th bgcolor='B0C4DE'>Best Delay</th>
+</tr>
+<tr>
+  <td>63.81</td>
+  <td>7</td>
+  <td>529.07</td>
+</tr>
+<tr>
+  <td>-p</td>
+  <td>-p</td>
+  <td>-p</td>
+</tr>
+</table><br>
+
+<table cellspacing='0' cellpadding='0' class='demo-table' >
+<tr>
+  <th bgcolor='B0C4DE'>Startegy</th>
+  <th bgcolor='B0C4DE'>Gate Count</th>
+  <th bgcolor='B0C4DE'>Area (um^2)</th>
+  <th bgcolor='B0C4DE'>Delay (ps)</th>
+
+  <th bgcolor='B0C4DE'>Gates Ratio</th>
+  <th bgcolor='B0C4DE'>Area Ratio</th>
+  <th bgcolor='B0C4DE'>Delay Ratio</th>
+
+</tr>
+<tr>
+<td>S1: -p</td>
+<td>16</td>
+<td>107.60</td>
+<td>614.97</td>
+<td>2.285</td>
+<td>1.686</td>
+<td>1.162</td>
+</tr>
+<tr>
+<td>S2: -p</td>
+<td>14</td>
+<td>98.84</td>
+<td>611.65</td>
+<td>2</td>
+<td>1.548</td>
+<td>1.156</td>
+</tr>
+<tr>
+<td>S3: -p</td>
+<td>14</td>
+<td>98.84</td>
+<td>611.65</td>
+<td>2</td>
+<td>1.548</td>
+<td>1.156</td>
+</tr>
+<tr>
+<td>S4: -p</td>
+<td>14</td>
+<td>98.84</td>
+<td bgcolor='#ccff99'>529.07</td>
+<td>2</td>
+<td>1.548</td>
+<td bgcolor='#FFFACD'>1</td>
+</tr>
+<tr>
+<td>S5: -p</td>
+<td bgcolor='#ccff99'>7</td>
+<td bgcolor='#ccff99'>63.81</td>
+<td>604.40</td>
+<td bgcolor='#FFFACD'>1</td>
+<td bgcolor='#FFFACD'>1</td>
+<td>1.142</td>
+</tr>
+<tr>
+<td>S6: -p</td>
+<td bgcolor='#ccff99'>7</td>
+<td>67.56</td>
+<td>604.40</td>
+<td bgcolor='#FFFACD'>1</td>
+<td bgcolor='#FFFACD'>1.058</td>
+<td>1.142</td>
+</tr>
+<tr>
+<td>S7: -p</td>
+<td bgcolor='#ccff99'>7</td>
+<td>67.56</td>
+<td>604.40</td>
+<td bgcolor='#FFFACD'>1</td>
+<td bgcolor='#FFFACD'>1.058</td>
+<td>1.142</td>
+</tr>
+</table>
+
+</div>
+  <div style='width:65%''>
+    <canvas id='myChart'></canvas>
+  </div>
+
+
+
+<script>
+var ctx = document.getElementById('myChart');
+var color = Chart.helpers.color;
+var scatterChart = new Chart(ctx, {
+    type: 'scatter',
+
+    data: {
+        datasets: [
+
+{
+        label: 'S1',
+        borderColor: window.chartColors.red,
+        backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+        pointRadius: 7,
+        data: [{
+            x: 107.60,
+            y: 614.97
+        }]
+    },{
+        label: 'S2',
+        borderColor: window.chartColors.olive,
+        backgroundColor: color(window.chartColors.olive).alpha(0.2).rgbString(),
+        pointRadius: 7,
+        data: [{
+            x: 98.84,
+            y: 611.65
+        }]
+    },{
+        label: 'S3',
+        borderColor: window.chartColors.yellow,
+        backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
+        pointRadius: 7,
+        data: [{
+            x: 98.84,
+            y: 611.65
+        }]
+    },{
+        label: 'S4',
+        borderColor: window.chartColors.green,
+        backgroundColor: color(window.chartColors.green).alpha(0.2).rgbString(),
+        pointRadius: 7,
+        data: [{
+            x: 98.84,
+            y: 529.07
+        }]
+    },{
+        label: 'S5',
+        borderColor: window.chartColors.blue,
+        backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+        pointRadius: 7,
+        data: [{
+            x: 63.81,
+            y: 604.40
+        }]
+    },{
+        label: 'S6',
+        borderColor: window.chartColors.purple,
+        backgroundColor: color(window.chartColors.purple).alpha(0.2).rgbString(),
+        pointRadius: 7,
+        data: [{
+            x: 67.56,
+            y: 604.40
+        }]
+    },{
+        label: 'S7',
+        borderColor: window.chartColors.grey,
+        backgroundColor: color(window.chartColors.grey).alpha(0.2).rgbString(),
+        pointRadius: 7,
+        data: [{
+            x: 67.56,
+            y: 604.40
+        }]
+    },
+]
+},
+options: {
+  title: {
+        display: true,
+        text: 'Synthesis Strategies Comparison'
+    },
+    scales: {
+        xAxes: [{
+            type: 'linear',
+            position: 'bottom',
+            scaleLabel: {
+              display: true,
+              labelString: 'Area'
+            }
+        }],
+        yAxes: [{
+            type: 'linear',
+            position: 'left',
+            scaleLabel: {
+              display: true,
+              labelString: 'Delay'
+            }
+        }]
+    }
+}
+});
+</script>
+
+</body>
+
+</html>
+
+

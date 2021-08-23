@@ -1,0 +1,20 @@
+Design Name: cmp
+Run Directory: /openLANE_flow/cmp/runs/run_three
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/magic//112-magic.drc
+Violation Message "Metal5 spacing < 1.6um (met5.2) "found 56 Times.
+Total Magic DRC violations is 56
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/routing//114-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

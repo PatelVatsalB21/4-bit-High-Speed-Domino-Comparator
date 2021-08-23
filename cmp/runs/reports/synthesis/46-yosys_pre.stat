@@ -1,0 +1,18 @@
+
+10. Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 11
+   Number of wire bits:             17
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $_ANDNOT_                       3
+     $_OR_                           1
+     $_XNOR_                         1
+     $_XOR_                          3
+

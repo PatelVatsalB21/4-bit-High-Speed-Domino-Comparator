@@ -1,0 +1,691 @@
+[INFO]: Current run directory is /openLANE_flow/cmp/runs/run_three
+[INFO]: Preparing LEF Files
+[INFO]: Extracting the number of available metal layers from /openLANE_flow/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef
+[INFO]: The number of available metal layers is 6
+[INFO]: The available metal layers are li1 met1 met2 met3 met4 met5
+[INFO]: Merging LEF Files...
+[INFO]: Trimming Liberty...
+[INFO]: Generating Exclude List...
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis...
+[INFO]: current step index: 1
+[INFO]: Changing netlist from 0 to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 2
+[INFO]: Synthesis was successful
+[INFO]: Running Floorplanning...
+[INFO]: Running Initial Floorplanning...
+[INFO]: current step index: 3
+[INFO]: Core area width: 10.580000000000002
+[INFO]: Core area height: 8.159999999999998
+[WARNING]: Current core area is too small for a power grid
+[WARNING]: Minimizing the power grid!!!!
+[INFO]: Changing layout from 0 to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/3-verilog2def_openroad.def
+[INFO]: Running IO Placement...
+[INFO]: current step index: 4
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/3-verilog2def_openroad.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/4-ioPlacer.def
+[INFO]: Running Tap/Decap Insertion...
+[INFO]: current step index: 5
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/4-ioPlacer.def to /openLANE_flow/cmp/runs/run_three/results/floorplan/cmp.floorplan.def
+[INFO]: Power planning the following nets
+[INFO]: Power: VPWR
+[INFO]: Ground: VGND
+[INFO]: Generating PDN...
+[INFO]: current step index: 6
+[INFO]: PDN generation was successful.
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/floorplan/cmp.floorplan.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/6-pdn.def
+[INFO]: Running Placement...
+[INFO]: Running Global Placement...
+[INFO]: current step index: 7
+[INFO]: Global placement was successful
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/6-pdn.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/7-replace.def
+[INFO]: Running Resizer Design Optimizations...
+[INFO]: Generating Exclude List...
+[INFO]: Creating ::env(DONT_USE_CELLS)...
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/7-replace.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/7-resizer.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 8
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 9
+[INFO]: Running Detailed Placement...
+[INFO]: current step index: 10
+[ERROR]: during executing: "openroad -exit /openLANE_flow/scripts/openroad/or_opendp.tcl |& tee >&@stdout /openLANE_flow/cmp/runs/run_three/logs/placement/10-opendp.log"
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+child process exited abnormally
+
+[ERROR]: Please check openroad  log file
+[ERROR]: Dumping to /openLANE_flow/cmp/runs/run_three/error.log
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Flow failed for cmp/22-08_04-56 in 0h0m26s
+[INFO]: Generating Final Summary Report...
+[ERROR]: during executing: "openroad -python /openLANE_flow/report_generation_wrapper.py -d /openLANE_flow/cmp -dn cmp -t run_three -o /openLANE_flow/cmp/runs/run_three/reports/final_summary_report.csv -m /openLANE_flow/cmp/runs/run_three/reports/manufacturability_report.rpt -rs /openLANE_flow/cmp/runs/run_three/reports/runtime_summary_report.rpt -r /openLANE_flow/cmp/runs/run_three"
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+OpenROAD 1 4d4d7205fd0292dbf3fae55fad9109b3f0bd5786
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+grep: /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+sed: can't read /openLANE_flow/cmp/runs/run_three/logs/routing/fastroute.log: No such file or directory
+
+[ERROR]: Please check openroad  log file
+[ERROR]: Dumping to /openLANE_flow/cmp/runs/run_three/error.log
+[WARNING]: A run for cmp with tag 'run_three' already exists. Pass -overwrite option to overwrite it
+[INFO]: Now you can run commands that pick up where 'run_three' left off
+[INFO]: Current run directory is /openLANE_flow/cmp/runs/run_three
+[INFO]: Sourcing /openLANE_flow/cmp/runs/run_three/config.tcl
+Any changes to the DESIGN config file will NOT be applied
+[INFO]: Current DEF: /openLANE_flow/cmp/runs/run_three/tmp/placement/7-resizer.def.
+[INFO]: Use 'set_def file_name.def' if you'd like to change it.
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis...
+[WARNING]: A netlist at /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v already exists...
+[WARNING]: Skipping synthesis
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 11
+[INFO]: Synthesis was successful
+[INFO]: Running Floorplanning...
+[INFO]: Running Initial Floorplanning...
+[INFO]: current step index: 12
+[INFO]: Core area width: 17.48
+[INFO]: Core area height: 16.32
+[WARNING]: Current core area is too small for a power grid
+[WARNING]: Minimizing the power grid!!!!
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/7-resizer.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/12-verilog2def_openroad.def
+[INFO]: Running IO Placement...
+[INFO]: current step index: 13
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/12-verilog2def_openroad.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/13-ioPlacer.def
+[INFO]: Running Tap/Decap Insertion...
+[INFO]: current step index: 14
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/13-ioPlacer.def to /openLANE_flow/cmp/runs/run_three/results/floorplan/cmp.floorplan.def
+[INFO]: Power planning the following nets
+[INFO]: Power: VPWR
+[INFO]: Ground: VGND
+[INFO]: Generating PDN...
+[INFO]: current step index: 15
+[INFO]: PDN generation was successful.
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/floorplan/cmp.floorplan.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/15-pdn.def
+[INFO]: Running Placement...
+[INFO]: Running Global Placement...
+[INFO]: current step index: 16
+[INFO]: Global placement was successful
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/15-pdn.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/16-replace.def
+[INFO]: Running Resizer Design Optimizations...
+[INFO]: Generating Exclude List...
+[INFO]: Creating ::env(DONT_USE_CELLS)...
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/16-replace.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/16-resizer.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 17
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 18
+[INFO]: Running Detailed Placement...
+[INFO]: current step index: 19
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/16-resizer.def to /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def to /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def
+[INFO]: Running TritonCTS...
+[INFO]: current step index: 20
+[INFO]: Trimming Liberty...
+[INFO]: Generating Exclude List...
+[INFO]: Clock Tree Synthesis was successful
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def to /openLANE_flow/cmp/runs/run_three/results/cts/cmp.cts.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 21
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_cts.v
+[INFO]: Running Resizer Timing Optimizations...
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/cts/cmp.cts.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/21-resizer_timing.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 22
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_cts.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 23
+[INFO]: Routing...
+[INFO]: Running Global Routing...
+[INFO]: current step index: 24
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/21-resizer_timing.def to /openLANE_flow/cmp/runs/run_three/tmp/routing/24-fastroute.def
+[INFO]: Changing layout from 0 to /openLANE_flow/cmp/runs/run_three/tmp/routing/24-fastroute.guide
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/24-fastroute.def to /openLANE_flow/cmp/runs/run_three/tmp/routing/24-fastroute.def
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/24-fastroute.guide to /openLANE_flow/cmp/runs/run_three/tmp/routing/24-fastroute.guide
+[INFO]: Current Def is /openLANE_flow/cmp/runs/run_three/tmp/routing/24-fastroute.def
+[INFO]: Current Guide is /openLANE_flow/cmp/runs/run_three/tmp/routing/24-fastroute.guide
+[INFO]: Running Fill Insertion...
+[INFO]: current step index: 25
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/24-fastroute.def to /openLANE_flow/cmp/runs/run_three/tmp/routing/25-addspacers.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 26
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_preroute.v
+[INFO]: Running Detailed Routing...
+[INFO]: current step index: 27
+[INFO]: No DRC violations after detailed routing.
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/25-addspacers.def to /openLANE_flow/cmp/runs/run_three/results/routing/26-cmp.def
+[INFO]: Running SPEF Extraction...
+[INFO]: current step index: 28
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 29
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Routing completed for cmp/22-08_04-56 in 0h2m21s
+[INFO]: Writing Powered Verilog...
+[INFO]: current step index: 30
+[INFO]: Writing Verilog...
+[INFO]: current step index: 31
+[INFO]: Yosys won't attempt to rewrite verilog, and the OpenROAD output will be used as is.
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_preroute.v to /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs.powered.v
+[INFO]: Running Magic to generate various views...
+[INFO]: Streaming out GDS II...
+[INFO]: current step index: 32
+[INFO]: current step index: 33
+[INFO]: current step index: 34
+[INFO]: current step index: 35
+[INFO]: Running Klayout to re-generate GDS-II...
+[INFO]: Streaming out GDS II...
+[INFO]: current step index: 36
+[INFO]: Back-up GDS-II streamed out.
+[INFO]: Running XOR on the layouts using Klayout...
+[INFO]: current step index: 37
+[INFO]: current step index: 38
+[INFO]: Klayout XOR Complete
+[INFO]: Running Magic Spice Export from LEF...
+[INFO]: current step index: 39
+[INFO]: No Illegal overlaps detected during extraction.
+[INFO]: Running LEF LVS...
+[INFO]: /openLANE_flow/cmp/runs/run_three/results/magic/cmp.spice against /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs.powered.v
+[INFO]: current step index: 40
+[INFO]: No LVS mismatches.
+[INFO]: Running Magic DRC...
+[INFO]: current step index: 41
+[INFO]: Converting Magic DRC Violations to Magic Readable Format...
+[INFO]: Converting Magic DRC Violations to Klayout XML Database...
+[INFO]: Converting DRC Violations to RDB Format...
+[INFO]: Converted DRC Violations to RDB Format
+[ERROR]: There are violations in the design after Magic DRC.
+[ERROR]: Total Number of violations is 56
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Flow failed for cmp/22-08_04-56 in 0h3m1s
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: cmp
+Run Directory: /openLANE_flow/cmp/runs/run_three
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/magic//41-magic.drc
+Violation Message "Metal5 spacing < 1.6um (met5.2) "found 56 Times.
+Total Magic DRC violations is 56
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.
+[INFO]: check full report here: /openLANE_flow/cmp/runs/run_three/reports/final_summary_report.csv
+[INFO]: Saving Runtime Environment
+[ERROR]: Flow Failed.
+[INFO]: Running Antenna Checks...
+[INFO]: Running OpenROAD Antenna Rule Checker...
+[INFO]: current step index: 42
+[INFO]: current step index: 43
+[INFO]: Running CVC
+[INFO]: current step index: 44
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Flow completed for cmp/22-08_04-56 in 0h3m6s
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: cmp
+Run Directory: /openLANE_flow/cmp/runs/run_three
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/magic//41-magic.drc
+Violation Message "Metal5 spacing < 1.6um (met5.2) "found 56 Times.
+Total Magic DRC violations is 56
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/routing//43-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0
+[INFO]: check full report here: /openLANE_flow/cmp/runs/run_three/reports/final_summary_report.csv
+[INFO]: Saving Runtime Environment
+[SUCCESS]: Flow Completed Without Fatal Errors.
+[WARNING]: A run for cmp with tag 'run_three' already exists. Pass -overwrite option to overwrite it
+[INFO]: Now you can run commands that pick up where 'run_three' left off
+[INFO]: Current run directory is /openLANE_flow/cmp/runs/run_three
+[INFO]: Sourcing /openLANE_flow/cmp/runs/run_three/config.tcl
+Any changes to the DESIGN config file will NOT be applied
+[INFO]: Current DEF: /openLANE_flow/cmp/runs/run_three/results/routing/26-cmp.def.
+[INFO]: Use 'set_def file_name.def' if you'd like to change it.
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis Exploration...
+[INFO]: current step index: 45
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs.powered.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v
+[INFO]: This is a Synthesis Exploration and so no need to remove the defparam lines.
+[WARNING]: A run for cmp with tag 'run_three' already exists. Pass -overwrite option to overwrite it
+[INFO]: Now you can run commands that pick up where 'run_three' left off
+[INFO]: Current run directory is /openLANE_flow/cmp/runs/run_three
+[INFO]: Sourcing /openLANE_flow/cmp/runs/run_three/config.tcl
+Any changes to the DESIGN config file will NOT be applied
+[INFO]: Current DEF: /openLANE_flow/cmp/runs/run_three/results/routing/26-cmp.def.
+[INFO]: Use 'set_def file_name.def' if you'd like to change it.
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis Exploration...
+[INFO]: current step index: 46
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v
+[INFO]: This is a Synthesis Exploration and so no need to remove the defparam lines.
+[WARNING]: A run for cmp with tag 'run_three' already exists. Pass -overwrite option to overwrite it
+[INFO]: Now you can run commands that pick up where 'run_three' left off
+[INFO]: Current run directory is /openLANE_flow/cmp/runs/run_three
+[INFO]: Sourcing /openLANE_flow/cmp/runs/run_three/config.tcl
+Any changes to the DESIGN config file will NOT be applied
+[INFO]: Current DEF: /openLANE_flow/cmp/runs/run_three/results/routing/26-cmp.def.
+[INFO]: Use 'set_def file_name.def' if you'd like to change it.
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis Exploration...
+[INFO]: current step index: 47
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v
+[INFO]: This is a Synthesis Exploration and so no need to remove the defparam lines.
+[WARNING]: A run for cmp with tag 'run_three' already exists. Pass -overwrite option to overwrite it
+[INFO]: Now you can run commands that pick up where 'run_three' left off
+[INFO]: Current run directory is /openLANE_flow/cmp/runs/run_three
+[INFO]: Sourcing /openLANE_flow/cmp/runs/run_three/config.tcl
+Any changes to the DESIGN config file will NOT be applied
+[INFO]: Current DEF: /openLANE_flow/cmp/runs/run_three/results/routing/26-cmp.def.
+[INFO]: Use 'set_def file_name.def' if you'd like to change it.
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Flow completed for cmp/22-08_04-56 in 0h0m2s
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: cmp
+Run Directory: /openLANE_flow/cmp/runs/run_three
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/magic//41-magic.drc
+Violation Message "Metal5 spacing < 1.6um (met5.2) "found 56 Times.
+Total Magic DRC violations is 56
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/routing//43-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0
+[INFO]: check full report here: /openLANE_flow/cmp/runs/run_three/reports/final_summary_report.csv
+[INFO]: Saving Runtime Environment
+[SUCCESS]: Flow Completed Without Fatal Errors.
+[WARNING]: A run for cmp with tag 'run_three' already exists. Pass -overwrite option to overwrite it
+[INFO]: Now you can run commands that pick up where 'run_three' left off
+[INFO]: Current run directory is /openLANE_flow/cmp/runs/run_three
+[INFO]: Sourcing /openLANE_flow/cmp/runs/run_three/config.tcl
+Any changes to the DESIGN config file will NOT be applied
+[INFO]: Current DEF: /openLANE_flow/cmp/runs/run_three/results/routing/26-cmp.def.
+[INFO]: Use 'set_def file_name.def' if you'd like to change it.
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis...
+[WARNING]: A netlist at /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v already exists...
+[WARNING]: Skipping synthesis
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 48
+[INFO]: Synthesis was successful
+[INFO]: Running Floorplanning...
+[INFO]: Running Initial Floorplanning...
+[INFO]: current step index: 49
+[INFO]: Core area width: 12.420000000000002
+[INFO]: Core area height: 10.88
+[WARNING]: Current core area is too small for a power grid
+[WARNING]: Minimizing the power grid!!!!
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/routing/26-cmp.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/49-verilog2def_openroad.def
+[INFO]: Running IO Placement...
+[INFO]: current step index: 50
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/49-verilog2def_openroad.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/50-ioPlacer.def
+[INFO]: Running Tap/Decap Insertion...
+[INFO]: current step index: 51
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/50-ioPlacer.def to /openLANE_flow/cmp/runs/run_three/results/floorplan/cmp.floorplan.def
+[INFO]: Power planning the following nets
+[INFO]: Power: VPWR
+[INFO]: Ground: VGND
+[INFO]: Generating PDN...
+[INFO]: current step index: 52
+[INFO]: PDN generation was successful.
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/floorplan/cmp.floorplan.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/52-pdn.def
+[INFO]: Running Placement...
+[INFO]: Running Global Placement...
+[INFO]: current step index: 53
+[INFO]: Global placement was successful
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/15-pdn.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/53-replace.def
+[INFO]: Running Resizer Design Optimizations...
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/53-replace.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/53-resizer.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 54
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 55
+[INFO]: Running Detailed Placement...
+[INFO]: current step index: 56
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/53-resizer.def to /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def to /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def
+[INFO]: Running TritonCTS...
+[INFO]: current step index: 57
+[INFO]: Clock Tree Synthesis was successful
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def to /openLANE_flow/cmp/runs/run_three/results/cts/cmp.cts.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 58
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_cts.v
+[INFO]: Running Resizer Timing Optimizations...
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/cts/cmp.cts.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/58-resizer_timing.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 59
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_cts.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 60
+[INFO]: Routing...
+[INFO]: Running Global Routing...
+[INFO]: current step index: 61
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/21-resizer_timing.def to /openLANE_flow/cmp/runs/run_three/tmp/routing/61-fastroute.def
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/24-fastroute.guide to /openLANE_flow/cmp/runs/run_three/tmp/routing/61-fastroute.guide
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/61-fastroute.def to /openLANE_flow/cmp/runs/run_three/tmp/routing/61-fastroute.def
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/61-fastroute.guide to /openLANE_flow/cmp/runs/run_three/tmp/routing/61-fastroute.guide
+[INFO]: Current Def is /openLANE_flow/cmp/runs/run_three/tmp/routing/61-fastroute.def
+[INFO]: Current Guide is /openLANE_flow/cmp/runs/run_three/tmp/routing/61-fastroute.guide
+[INFO]: Running Fill Insertion...
+[INFO]: current step index: 62
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/61-fastroute.def to /openLANE_flow/cmp/runs/run_three/tmp/routing/62-addspacers.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 63
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_preroute.v
+[INFO]: Running Detailed Routing...
+[INFO]: current step index: 64
+[INFO]: No DRC violations after detailed routing.
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/62-addspacers.def to /openLANE_flow/cmp/runs/run_three/results/routing/63-cmp.def
+[INFO]: Running SPEF Extraction...
+[INFO]: current step index: 65
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 66
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Routing completed for cmp/22-08_04-56 in 0h3m15s
+[INFO]: Writing Powered Verilog...
+[INFO]: current step index: 67
+[INFO]: Writing Verilog...
+[INFO]: current step index: 68
+[INFO]: Yosys won't attempt to rewrite verilog, and the OpenROAD output will be used as is.
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_preroute.v to /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs.powered.v
+[INFO]: Running Magic to generate various views...
+[INFO]: Streaming out GDS II...
+[INFO]: current step index: 69
+[INFO]: current step index: 70
+[INFO]: current step index: 71
+[INFO]: current step index: 72
+[INFO]: Running Klayout to re-generate GDS-II...
+[INFO]: Streaming out GDS II...
+[INFO]: current step index: 73
+[INFO]: Back-up GDS-II streamed out.
+[INFO]: Running XOR on the layouts using Klayout...
+[INFO]: current step index: 74
+[INFO]: current step index: 75
+[INFO]: Klayout XOR Complete
+[INFO]: Running Magic Spice Export from LEF...
+[INFO]: current step index: 76
+[INFO]: No Illegal overlaps detected during extraction.
+[INFO]: Running LEF LVS...
+[INFO]: /openLANE_flow/cmp/runs/run_three/results/magic/cmp.spice against /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs.powered.v
+[INFO]: current step index: 77
+[INFO]: No LVS mismatches.
+[INFO]: Running Magic DRC...
+[INFO]: current step index: 78
+[INFO]: Converting Magic DRC Violations to Magic Readable Format...
+[INFO]: Converting Magic DRC Violations to Klayout XML Database...
+[INFO]: Converting DRC Violations to RDB Format...
+[INFO]: Converted DRC Violations to RDB Format
+[ERROR]: There are violations in the design after Magic DRC.
+[ERROR]: Total Number of violations is 56
+[INFO]: Running Antenna Checks...
+[INFO]: Running OpenROAD Antenna Rule Checker...
+[INFO]: current step index: 79
+[INFO]: current step index: 80
+[INFO]: Running CVC
+[INFO]: current step index: 81
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Flow completed for cmp/22-08_04-56 in 0h3m55s
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: cmp
+Run Directory: /openLANE_flow/cmp/runs/run_three
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/magic//78-magic.drc
+Violation Message "Metal5 spacing < 1.6um (met5.2) "found 56 Times.
+Total Magic DRC violations is 56
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/routing//80-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0
+[INFO]: check full report here: /openLANE_flow/cmp/runs/run_three/reports/final_summary_report.csv
+[INFO]: Saving Runtime Environment
+[SUCCESS]: Flow Completed Without Fatal Errors.
+[WARNING]: A run for cmp with tag 'run_three' already exists. Pass -overwrite option to overwrite it
+[INFO]: Now you can run commands that pick up where 'run_three' left off
+[INFO]: Current run directory is /openLANE_flow/cmp/runs/run_three
+[INFO]: Sourcing /openLANE_flow/cmp/runs/run_three/config.tcl
+Any changes to the DESIGN config file will NOT be applied
+[INFO]: Current DEF: /openLANE_flow/cmp/runs/run_three/results/routing/26-cmp.def.
+[INFO]: Use 'set_def file_name.def' if you'd like to change it.
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Flow completed for cmp/22-08_04-56 in 0h4m57s
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: cmp
+Run Directory: /openLANE_flow/cmp/runs/run_three
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/magic//78-magic.drc
+Violation Message "Metal5 spacing < 1.6um (met5.2) "found 56 Times.
+Total Magic DRC violations is 56
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/routing//80-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0
+[INFO]: check full report here: /openLANE_flow/cmp/runs/run_three/reports/final_summary_report.csv
+[INFO]: Saving Runtime Environment
+[SUCCESS]: Flow Completed Without Fatal Errors.
+[WARNING]: A run for cmp with tag 'run_three' already exists. Pass -overwrite option to overwrite it
+[INFO]: Now you can run commands that pick up where 'run_three' left off
+[INFO]: Current run directory is /openLANE_flow/cmp/runs/run_three
+[INFO]: Sourcing /openLANE_flow/cmp/runs/run_three/config.tcl
+Any changes to the DESIGN config file will NOT be applied
+[INFO]: Current DEF: /openLANE_flow/cmp/runs/run_three/results/routing/26-cmp.def.
+[INFO]: Use 'set_def file_name.def' if you'd like to change it.
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis...
+[WARNING]: A netlist at /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v already exists...
+[WARNING]: Skipping synthesis
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs.powered.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 82
+[INFO]: Synthesis was successful
+[INFO]: Running Floorplanning...
+[INFO]: Running Initial Floorplanning...
+[INFO]: current step index: 83
+[INFO]: Core area width: 12.420000000000002
+[INFO]: Core area height: 10.88
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/routing/26-cmp.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/83-verilog2def_openroad.def
+[INFO]: Running IO Placement...
+[INFO]: current step index: 84
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/83-verilog2def_openroad.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/84-ioPlacer.def
+[INFO]: Running Tap/Decap Insertion...
+[INFO]: current step index: 85
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/84-ioPlacer.def to /openLANE_flow/cmp/runs/run_three/results/floorplan/cmp.floorplan.def
+[INFO]: Power planning the following nets
+[INFO]: Power: VPWR
+[INFO]: Ground: VGND
+[INFO]: Generating PDN...
+[INFO]: current step index: 86
+[INFO]: PDN generation was successful.
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/floorplan/cmp.floorplan.def to /openLANE_flow/cmp/runs/run_three/tmp/floorplan/86-pdn.def
+[INFO]: Running Placement...
+[INFO]: Running Global Placement...
+[INFO]: current step index: 87
+[INFO]: Global placement was successful
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/floorplan/15-pdn.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/87-replace.def
+[INFO]: Running Resizer Design Optimizations...
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/87-replace.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/87-resizer.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 88
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 89
+[INFO]: Running Detailed Placement...
+[INFO]: current step index: 90
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/87-resizer.def to /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def to /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def
+[INFO]: Running TritonCTS...
+[INFO]: current step index: 91
+[INFO]: Clock Tree Synthesis was successful
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/placement/cmp.placement.def to /openLANE_flow/cmp/runs/run_three/results/cts/cmp.cts.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 92
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_cts.v
+[INFO]: Running Resizer Timing Optimizations...
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/results/cts/cmp.cts.def to /openLANE_flow/cmp/runs/run_three/tmp/placement/92-resizer_timing.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 93
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_cts.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 94
+[INFO]: Routing...
+[INFO]: Running Global Routing...
+[INFO]: current step index: 95
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/placement/21-resizer_timing.def to /openLANE_flow/cmp/runs/run_three/tmp/routing/95-fastroute.def
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/61-fastroute.guide to /openLANE_flow/cmp/runs/run_three/tmp/routing/95-fastroute.guide
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/95-fastroute.def to /openLANE_flow/cmp/runs/run_three/tmp/routing/95-fastroute.def
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/95-fastroute.guide to /openLANE_flow/cmp/runs/run_three/tmp/routing/95-fastroute.guide
+[INFO]: Current Def is /openLANE_flow/cmp/runs/run_three/tmp/routing/95-fastroute.def
+[INFO]: Current Guide is /openLANE_flow/cmp/runs/run_three/tmp/routing/95-fastroute.guide
+[INFO]: Running Fill Insertion...
+[INFO]: current step index: 96
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/95-fastroute.def to /openLANE_flow/cmp/runs/run_three/tmp/routing/96-addspacers.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 97
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_optimized.v to /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_preroute.v
+[INFO]: Running Detailed Routing...
+[INFO]: current step index: 98
+[INFO]: No DRC violations after detailed routing.
+[INFO]: Changing layout from /openLANE_flow/cmp/runs/run_three/tmp/routing/96-addspacers.def to /openLANE_flow/cmp/runs/run_three/results/routing/97-cmp.def
+[INFO]: Running SPEF Extraction...
+[INFO]: current step index: 99
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 100
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Routing completed for cmp/22-08_04-56 in 0h7m36s
+[INFO]: Writing Powered Verilog...
+[INFO]: current step index: 101
+[INFO]: Writing Verilog...
+[INFO]: current step index: 102
+[INFO]: Yosys won't attempt to rewrite verilog, and the OpenROAD output will be used as is.
+[INFO]: Changing netlist from /openLANE_flow/cmp/runs/run_three/results/synthesis/cmp.synthesis_preroute.v to /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs.powered.v
+[INFO]: Running Magic to generate various views...
+[INFO]: Streaming out GDS II...
+[INFO]: current step index: 103
+[INFO]: current step index: 104
+[INFO]: current step index: 105
+[INFO]: current step index: 106
+[INFO]: Running Klayout to re-generate GDS-II...
+[INFO]: Streaming out GDS II...
+[INFO]: current step index: 107
+[INFO]: Back-up GDS-II streamed out.
+[INFO]: Running XOR on the layouts using Klayout...
+[INFO]: current step index: 108
+[INFO]: current step index: 109
+[INFO]: Klayout XOR Complete
+[INFO]: Running Magic Spice Export from LEF...
+[INFO]: current step index: 110
+[INFO]: No Illegal overlaps detected during extraction.
+[INFO]: Running LEF LVS...
+[INFO]: /openLANE_flow/cmp/runs/run_three/results/magic/cmp.spice against /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs.powered.v
+[INFO]: current step index: 111
+[INFO]: No LVS mismatches.
+[INFO]: Running Magic DRC...
+[INFO]: current step index: 112
+[INFO]: Converting Magic DRC Violations to Magic Readable Format...
+[INFO]: Converting Magic DRC Violations to Klayout XML Database...
+[INFO]: Converting DRC Violations to RDB Format...
+[INFO]: Converted DRC Violations to RDB Format
+[ERROR]: There are violations in the design after Magic DRC.
+[ERROR]: Total Number of violations is 56
+[INFO]: Running Antenna Checks...
+[INFO]: Running OpenROAD Antenna Rule Checker...
+[INFO]: current step index: 113
+[INFO]: current step index: 114
+[INFO]: Running CVC
+[INFO]: current step index: 115
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Flow completed for cmp/22-08_04-56 in 0h8m17s
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: cmp
+Run Directory: /openLANE_flow/cmp/runs/run_three
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/magic//112-magic.drc
+Violation Message "Metal5 spacing < 1.6um (met5.2) "found 56 Times.
+Total Magic DRC violations is 56
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/cmp/runs/run_three/results/lvs/cmp.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/cmp/runs/run_three/reports/routing//114-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0
+[INFO]: check full report here: /openLANE_flow/cmp/runs/run_three/reports/final_summary_report.csv
+[INFO]: Saving Runtime Environment
+[SUCCESS]: Flow Completed Without Fatal Errors.

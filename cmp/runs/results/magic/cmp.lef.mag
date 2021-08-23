@@ -1,0 +1,85 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1629609716
+<< obsli1 >>
+rect 1104 2159 4600 5457
+<< obsm1 >>
+rect 14 5216 4734 5488
+rect 5626 5216 5690 5228
+rect 14 5188 5690 5216
+rect 14 2128 4734 5188
+rect 5626 5176 5690 5188
+<< metal2 >>
+rect 1306 7124 1362 7924
+rect 3514 7124 3570 7924
+rect 5722 7124 5778 7924
+rect 18 0 74 800
+rect 2226 0 2282 800
+rect 4434 0 4490 800
+<< obsm2 >>
+rect 1320 6878 1348 7124
+rect 3528 6878 3556 7124
+rect 20 856 4734 6878
+rect 5736 5250 5764 7124
+rect 5644 5234 5764 5250
+rect 5632 5222 5764 5234
+rect 5632 5170 5684 5222
+rect 130 734 2170 856
+rect 2338 734 4378 856
+rect 4546 734 4734 856
+<< metal3 >>
+rect 0 6536 800 6656
+rect 4980 4360 5780 4480
+rect 0 3272 800 3392
+rect 4980 1096 5780 1216
+<< obsm3 >>
+rect 880 6456 4734 6629
+rect 800 4450 4734 6456
+rect 800 4390 4980 4450
+rect 800 3472 4734 4390
+rect 880 3192 4734 3472
+rect 800 1186 4734 3192
+rect 800 1126 4980 1186
+rect 800 1123 4734 1126
+<< obsm4 >>
+rect 1526 2128 4177 5488
+<< metal5 >>
+rect 1104 3056 4600 3376
+rect 1104 2512 4600 2832
+<< obsm5 >>
+rect 1104 3696 4600 5008
+<< labels >>
+rlabel metal2 s 5722 7124 5778 7924 6 A[0]
+port 1 nsew signal input
+rlabel metal2 s 18 0 74 800 6 A[1]
+port 2 nsew signal input
+rlabel metal2 s 3514 7124 3570 7924 6 A[2]
+port 3 nsew signal input
+rlabel metal2 s 4434 0 4490 800 6 A[3]
+port 4 nsew signal input
+rlabel metal3 s 0 3272 800 3392 6 B[0]
+port 5 nsew signal input
+rlabel metal3 s 4980 4360 5780 4480 6 B[1]
+port 6 nsew signal input
+rlabel metal2 s 2226 0 2282 800 6 B[2]
+port 7 nsew signal input
+rlabel metal3 s 0 6536 800 6656 6 B[3]
+port 8 nsew signal input
+rlabel metal5 s 1104 3056 4600 3376 6 VGND
+port 9 nsew ground input
+rlabel metal5 s 1104 2512 4600 2832 6 VPWR
+port 10 nsew power input
+rlabel metal2 s 1306 7124 1362 7924 6 clk
+port 11 nsew signal input
+rlabel metal3 s 4980 1096 5780 1216 6 out
+port 12 nsew signal output
+<< properties >>
+string LEFclass BLOCK
+string FIXED_BBOX 0 0 4734 6878
+string LEFview TRUE
+string GDS_FILE /openLANE_flow/cmp/runs/run_three/results/magic/cmp.gds
+string GDS_END 95286
+string GDS_START 43704
+<< end >>
+
