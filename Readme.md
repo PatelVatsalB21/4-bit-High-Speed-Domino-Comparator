@@ -358,3 +358,12 @@ Number of nets violated: 0
 - lef layout
 
 <img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/lef%20layout.png"/>
+
+
+## Post-layout
+
+### Simulation
+
+GTKWave output waveform
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/gls.png"/>
