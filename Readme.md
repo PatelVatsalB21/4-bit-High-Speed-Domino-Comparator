@@ -209,3 +209,36 @@ if { [file exists $filename] == 1} {
 
 
 <img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/floorplan.png"/>
+
+### Placement
+
+- Routing resources analysis
+
+```
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical          180           115          36.11%
+met1       Horizontal        240           171          28.75%
+met2       Vertical          180           135          25.00%
+met3       Horizontal        120            92          23.33%
+met4       Vertical           72            55          23.61%
+met5       Horizontal         24            16          33.33%
+---------------------------------------------------------------
+```
+
+- Final congestion report
+
+```
+
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                115             4            3.48%             0 /  0 /  0
+met1               171             9            5.26%             0 /  0 /  0
+met2               135             3            2.22%             0 /  0 /  0
+met3                92             0            0.00%             0 /  0 /  0
+met4                55             0            0.00%             0 /  0 /  0
+met5                16             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total              584            16            2.74%             0 /  0 /  0
+```
