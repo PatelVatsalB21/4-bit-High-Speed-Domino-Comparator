@@ -212,6 +212,19 @@ if { [file exists $filename] == 1} {
 
 ### Placement
 
+- Placement Analysis
+
+```
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL             306.6 u
+legalized HPWL            313.3 u
+delta HPWL                    2 %
+```
+
+
 - Routing resources analysis
 
 ```
@@ -244,3 +257,87 @@ Total              584            16            2.74%             0 /  0 /  0
 ```
 
 <img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/final%20gds.png"/>
+
+
+### Routing
+
+- Routing resurces analysis
+
+```
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical          300            64          78.67%
+met1       Horizontal        400           301          24.75%
+met2       Vertical          300           244          18.67%
+met3       Horizontal        200           165          17.50%
+met4       Vertical          120            94          21.67%
+met5       Horizontal         40            30          25.00%
+---------------------------------------------------------------
+```
+
+- Final congestion report
+
+```
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                 64             2            3.12%             0 /  0 /  0
+met1               301            14            4.65%             0 /  0 /  0
+met2               244            17            6.97%             0 /  0 /  0
+met3               165             0            0.00%             0 /  0 /  0
+met4                94             0            0.00%             0 /  0 /  0
+met5                30             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total              898            33            3.67%             0 /  0 /  0
+```
+
+- Complete detail routing
+
+```
+total wire length = 296 um
+total wire length on LAYER li1 = 0 um
+total wire length on LAYER met1 = 106 um
+total wire length on LAYER met2 = 148 um
+total wire length on LAYER met3 = 42 um
+total wire length on LAYER met4 = 0 um
+total wire length on LAYER met5 = 0 um
+total number of vias = 91
+up-via summary (total 91):
+
+---------------------
+ FR_MASTERSLICE     0
+            li1    48
+           met1    39
+           met2     4
+           met3     0
+           met4     0
+---------------------
+                   91
+```
+
+#### Final Summary 
+
+```
+Run Directory: /openLANE_flow/OpenLane/cmp/runs/run_four
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/OpenLane/cmp/runs/run_four/reports/magic//50-magic.drc
+Violation Message "Metal5 spacing < 1.6um (met5.2) "found 56 Times.
+Total Magic DRC violations is 56
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/OpenLane/cmp/runs/run_four/results/lvs/cmp.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/OpenLane/cmp/runs/run_four/reports/routing//52-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0
+[INFO]: check full report here: /openLANE_flow/OpenLane/cmp/runs/run_four/reports/final_summary_report.csv
+[INFO]: Saving Runtime Environment
+[SUCCESS]: Flow Completed Without Fatal Errors.
+```
