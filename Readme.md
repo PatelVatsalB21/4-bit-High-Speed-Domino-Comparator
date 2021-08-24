@@ -15,7 +15,6 @@
 - [Floorplanning](#floorplanning)
 - [Placement](#placement)
 - [Routing](#routing)
-- [Layout vs Schematic](#layout-vs-schematic)
 - [Final Layout](#final-layout)
 - [Post-layout](#post-layout)
 	- [Simulation](#simulation)
@@ -341,3 +340,21 @@ Number of nets violated: 0
 [INFO]: Saving Runtime Environment
 [SUCCESS]: Flow Completed Without Fatal Errors.
 ```
+
+### Final Layout
+
+- Layout after floorplanning and placement in Magic
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/floorplan%20and%20placement.png"/>
+
+- Final GDS layout
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/final%20gds.png"/>
+
+- Closeup view of the final layout design
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/close%20gds.png"/>
+
+- lef layout
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/lef%20layout.png"/>
