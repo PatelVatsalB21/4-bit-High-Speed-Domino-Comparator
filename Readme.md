@@ -470,3 +470,10 @@ cmp
 - Improvement in max clock frequency of the comparator.
 - Post layout simulation bugs to be fixed in sky130 nm pdks.
 - To perform spice simulation of the final GDS layout.
+
+## References
+
+- [GitLab/OpenLane workshop](https://gitlab.com/gab13c/openlane-workshop)
+- [The OpenROAD Project/OpenLane](https://github.com/The-OpenROAD-Project/OpenLane)
+- Ahmed Ghazy and Mohamed Shalan, "OpenLane: The Open-Source Digital ASIC Implementation Flow", Article No.21, Workshop on Open-Source EDA Technology (WOSET), 2020. [Paper](https://github.com/woset-workshop/woset-workshop.github.io/blob/master/PDFs/2020/a21.pdf)
+
