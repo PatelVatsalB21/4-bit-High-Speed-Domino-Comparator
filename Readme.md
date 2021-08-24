@@ -24,10 +24,16 @@
 - [References](#references)
 - [Contributors](#contributors)
 
-### Design Overview
+## Design Overview
 
 <img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/application.png"/>
 
-### IP specs
+## IP specs
 
 <img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/ip_specs.png"/>
+
+## Verilog behavioral design
+
+Yosys synthesis
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/yosys_flow.png"/>
