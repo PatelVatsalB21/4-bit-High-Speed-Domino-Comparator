@@ -242,3 +242,5 @@ met5                16             0            0.00%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
 Total              584            16            2.74%             0 /  0 /  0
 ```
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/final%20gds.png"/>
