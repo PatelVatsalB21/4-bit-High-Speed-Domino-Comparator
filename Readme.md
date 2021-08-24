@@ -4,9 +4,8 @@
 # Table of Contents
 
 - [Design Overview](#design-overview)
-- [IP specs Provided](#ip-specs)
+- [IP specs](#ip-specs)
 - [Verilog behavioral design](#verilog-behavioral-design)
-	- [Simulation](#simulation)
 - [OpenLane](#openlane)
 	- [Design Stages](#openLane-design-stages)	
 	- [Installation](#installation)
