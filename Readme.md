@@ -4,7 +4,7 @@
 # Table of Contents
 
 - [Design Overview](#design-overview)
-- [IP specs Provided](#ip-specs-provided)
+- [IP specs Provided](#ip-specs)
 - [Verilog behavioral design](#verilog-behavioral-design)
 	- [Simulation](#simulation)
 - [OpenLane](#openlane)
@@ -76,3 +76,23 @@ For more information check [here](https://openlane.readthedocs.io/)
 	- `Klayout` - Performs DRC Checks
 	- `Netgen` - Performs LVS Checks
 	- `CVC` - Performs Circuit Validity Checks
+
+### Installation
+
+#### Prerequisites
+
+- Preferred Ubuntu OS)
+- Docker 19.03.12+
+- GNU Make
+- Python 3.6+ with PIP
+- Click, Pyyaml: `pip3 install pyyaml click`
+
+```
+git clone https://github.com/The-OpenROAD-Project/OpenLane.git
+cd OpenLane/
+make openlane
+make pdk
+make test # This a ~5 minute test that verifies that the flow and the pdk were properly installed
+```
+
+For detailed installation process, check [here](https://github.com/The-OpenROAD-Project/OpenLane)
