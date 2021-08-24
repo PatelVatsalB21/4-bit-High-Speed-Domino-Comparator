@@ -96,3 +96,28 @@ make test # This a ~5 minute test that verifies that the flow and the pdk were p
 ```
 
 For detailed installation process, check [here](https://github.com/The-OpenROAD-Project/OpenLane)
+
+### Running OpenLane
+
+`make mount`
+- Note
+	- Default PDK_ROOT is $(pwd)/pdks. If you have installed the PDK at a different location, run the following before `make mount`:
+	- Default IMAGE_NAME is efabless/openlane:current. If you want to use a different version, run the following before `make mount`:
+
+The following is roughly what happens under the hood when you run `make mount` + the required exports:
+
+```
+export PDK_ROOT=<absolute path to where skywater-pdk and open_pdks will reside>
+export IMAGE_NAME=<docker image name>
+docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) $IMAGE_NAME
+```
+
+You can use the following example to check the overall setup:
+
+`./flow.tcl -design spm`
+
+To run openlane in interactive mode
+
+`./flow.tcl -interactive`
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/openlane_interactive.png"/>
