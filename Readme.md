@@ -367,3 +367,47 @@ Number of nets violated: 0
 GTKWave output waveform
 
 <img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/gls.png"/>
+
+
+## Steps to reproduce and explore the design
+
+- Clone the project using following command
+ 
+`git clone https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator.git`
+
+- To explore synthesis of the design
+
+```
+make mount
+flow.tcl -design cmp -synth_explore
+```
+
+- To explore floorplan
+
+```
+cd floorplan/
+magic lef read merged.lef def read cmp.floorplan.def &
+```
+
+- To explore placement
+
+```
+cd placement/ 
+magic lef read merged.lef def read cmp.placement.def &
+```
+
+- To explore final layout
+
+```
+cd final_layout/
+magic cmp.mag
+```
+
+- To reproduce Post-layout simulation
+
+```
+cd post_layout/
+iverilog -o gls gls.v primitives.v sky130_fd_sc_hd.v
+./gls
+gtkwave gls.vcd
+```
