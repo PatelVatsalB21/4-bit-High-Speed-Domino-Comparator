@@ -170,7 +170,7 @@ Synthesis reports
 
 - Yosys synthesis strategies
 
-<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/yosys.png"/>
+<img src="https://github.com/PatelVatsalB21/4-bit-High-Speed-Domino-Comparator/blob/main/images/yosys_strategies.png"/>
 
 ### Floorplanning 
 
