@@ -170,3 +170,6 @@ Synthesis reports
    
 ```
 
+- Yosys synthesis strategies
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/yosys.png"/>
