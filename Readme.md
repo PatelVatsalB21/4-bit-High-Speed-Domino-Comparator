@@ -121,3 +121,52 @@ To run openlane in interactive mode
 `./flow.tcl -interactive`
 
 <img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/openlane_interactive.png"/>
+
+### Synthesis
+
+Synthesis reports
+
+
+```
+
+- Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 11
+   Number of wire bits:             17
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $_ANDNOT_                       3
+     $_OR_                           1
+     $_XNOR_                         1
+     $_XOR_                          3
+```
+
+
+```
+
+- Printing statistics.
+
+=== cmp ===
+
+   Number of wires:                 10
+   Number of wire bits:             16
+   Number of public wires:           4
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     sky130_fd_sc_hd__a2bb2o_2       4
+     sky130_fd_sc_hd__a41o_2         1
+     sky130_fd_sc_hd__inv_2          2
+
+   Chip area for module '\cmp': 63.811200
+   
+```
+
