@@ -27,3 +27,7 @@
 ### Design Overview
 
 <img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/application.png"/>
+
+### IP specs
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/ip_specs.png"/>
