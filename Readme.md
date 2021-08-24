@@ -411,3 +411,51 @@ iverilog -o gls gls.v primitives.v sky130_fd_sc_hd.v
 ./gls
 gtkwave gls.vcd
 ```
+
+- Complete details, logs and results can be found under this [folder](https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/tree/main/cmp). 
+
+```
+cmp
+├── runs
+│   ├── logs
+│   │   ├── cts
+│   │   ├── cvc
+│   │   ├── floorplan
+│   │   ├── klayout
+│   │   ├── lvs
+│   │   ├── magic
+│   │   ├── placement
+│   │   ├── routing
+│   │   └── synthesis
+│   ├── reports
+│   │   ├── cts
+│   │   ├── cvc
+│   │   ├── floorplan
+│   │   ├── klayout
+│   │   ├── lvs
+│   │   ├── magic
+│   │   ├── placement
+│   │   ├── routing
+│   │   └── synthesis
+│   ├── results
+│   │   ├── cts
+│   │   ├── cvc
+│   │   ├── floorplan
+│   │   ├── klayout
+│   │   ├── lvs
+│   │   ├── magic
+│   │   ├── placement
+│   │   ├── routing
+│   │   └── synthesis
+│   └── tmp
+│       ├── cts
+│       ├── cvc
+│       ├── floorplan
+│       ├── klayout
+│       ├── lvs
+│       ├── magic
+│       ├── placement
+│       ├── routing
+│       └── synthesis
+└── src
+```
