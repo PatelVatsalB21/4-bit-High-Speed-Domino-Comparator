@@ -464,3 +464,9 @@ cmp
 
 - Keep the top module name and design name always, else errors would come in the design.
 - This project is a Combinaional block hence there is no clock, static  time analysis is being skiped.
+
+## Area of improvement
+
+- Improvement in max clock frequency of the comparator.
+- Post layout simulation bugs to be fixed in sky130 nm pdks.
+- To perform spice simulation of the final GDS layout.
