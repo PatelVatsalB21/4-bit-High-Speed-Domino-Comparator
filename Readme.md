@@ -23,3 +23,7 @@
 - [Area of improvement](#area-of-improvement)
 - [References](#references)
 - [Contributors](#contributors)
+
+### Design Overview
+
+<img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/application.png"/>
