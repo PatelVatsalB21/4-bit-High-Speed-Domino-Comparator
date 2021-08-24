@@ -8,6 +8,7 @@
 - [Verilog behavioral design](#verilog-behavioral-design)
 	- [Simulation](#simulation)
 - [OpenLane](#openlane)
+	- [Design Stages](#openLane-design-stages)	
 	- [Installation](#installation)
 	- [Running OpenLane](#running-openlane)
 - [Synthesis](#synthesis)
@@ -44,3 +45,34 @@ OpenLane is an automated RTL to GDSII flow based on several components including
 For more information check [here](https://openlane.readthedocs.io/)
 
 <img src="https://github.com/PatelVatsalB21/High_Speed_Domino_Comparator/blob/main/images/openlane_flow.png"/>
+
+### OpenLane design stages
+
+1. Synthesis
+	- `yosys` - Performs RTL synthesis
+	- `abc` - Performs technology mapping
+	- `OpenSTA` - Performs static timing analysis on the resulting netlist to generate timing reports
+2. Floorplan and PDN
+	- `init_fp` - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
+	- `ioplacer` - Places the macro input and output ports
+	- `pdn` - Generates the power distribution network
+	- `tapcell` - Inserts welltap and decap cells in the floorplan
+3. Placement
+	- `RePLace` - Performs global placement
+	- `Resizer` - Performs optional optimizations on the design
+	- `OpenDP` - Perfroms detailed placement to legalize the globally placed components
+4. CTS
+	- `TritonCTS` - Synthesizes the clock distribution network (the clock tree)
+5. Routing
+	- `FastRoute` - Performs global routing to generate a guide file for the detailed router
+	- `CU-GR` - Another option for performing global routing.
+	- `TritonRoute` - Performs detailed routing
+	- `SPEF-Extractor` - Performs SPEF extraction
+6. GDSII Generation
+	- `Magic` - Streams out the final GDSII layout file from the routed def
+	- `Klayout` - Streams out the final GDSII layout file from the routed def as a back-up
+7. Checks
+	- `Magic` - Performs DRC Checks & Antenna Checks
+	- `Klayout` - Performs DRC Checks
+	- `Netgen` - Performs LVS Checks
+	- `CVC` - Performs Circuit Validity Checks
