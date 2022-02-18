@@ -20,8 +20,9 @@
 - [Steps to reproduce and explore the design](#steps-to-reproduce-and-explore-the-design)
 - [Key points to Remember](#key-points-to-remember)
 - [Area of improvement](#area-of-improvement)
+- [Author](#author)
+- [Aknowledgements](#aknowledgements)
 - [References](#references)
-- [Contributors](#contributors)
 
 ## Design Overview
 
@@ -473,15 +474,16 @@ cmp
 - To perform spice simulation of the final GDS layout.
 
 
+## Author
+
+- [Vatsal Patel](https://github.com/PatelVatsalB21), Bachelor of Technology in Electronics & Communication Engineering, ![VGEC](https://www.vgecg.ac.in/)
+
+
+## Aknowledgements
+
+- [Kunal Ghosh](https://github.com/kunalg123), Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com
+
 ## References
 
 - [GitLab/OpenLane workshop](https://gitlab.com/gab13c/openlane-workshop)
 - [The OpenROAD Project/OpenLane](https://github.com/The-OpenROAD-Project/OpenLane)
-- Ahmed Ghazy and Mohamed Shalan, "OpenLane: The Open-Source Digital ASIC Implementation Flow", Article No.21, Workshop on Open-Source EDA Technology (WOSET), 2020. [Paper](https://github.com/woset-workshop/woset-workshop.github.io/blob/master/PDFs/2020/a21.pdf)
-
-
-## Contributors
-
-- [Kunal Ghosh](https://github.com/kunalg123), Founder, VSD Corp. Pvt. Ltd
-- [Vatsal Patel](https://github.com/PatelVatsalB21), Bachelor of Technology in Electronics & Communication Engineering, ![VGEC](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi38s7VzcnyAhUA8XMBHXJFAh4QFnoECA0QAw&url=https%3A%2F%2Fwww.vgecg.ac.in%2F&usg=AOvVaw0xtYcwLdnmUYmHGvV7KOBT)
-
